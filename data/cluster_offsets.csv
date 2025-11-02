@@ -1,0 +1,12 @@
+# GCV Cluster Merger Offsets
+# Gas-galaxy spatial separation in merging clusters
+
+cluster_name,offset_kpc,offset_err_kpc,v_rel_km_s,reference
+Bullet_Cluster,200,50,4500,Clowe+2006
+El_Gordo,150,60,2500,Menanteau+2012
+MACS_J0025,150,40,3000,Bradac+2008
+
+# GCV Fit Result:
+# tau_c = 49 ± 8 Myr
+# chi2 = 2.7 (3 data points, 2 dof)
+# chi2/dof = 0.90

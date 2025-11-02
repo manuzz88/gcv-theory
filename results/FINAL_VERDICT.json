@@ -1,0 +1,95 @@
+{
+  "final_status": "NEEDS_REVISION",
+  "timestamp": "2025-11-02T08:00:00",
+  "summary": "GCV passa 2/3 test ma fallisce sul weak lensing",
+  "tests": {
+    "test1_rotations": {
+      "name": "Rotazioni Galattiche",
+      "status": "PASS",
+      "mape": 10.7,
+      "median_error": 9.5,
+      "parameter": {
+        "a0": 1.72e-10,
+        "unit": "m/s²"
+      },
+      "details": "MAPE 10.7% su 27 galassie SPARC con un solo parametro globale",
+      "verdict": "Competitiva rispetto a materia oscura"
+    },
+    "test2_lensing": {
+      "name": "Weak Lensing",
+      "status": "FAIL",
+      "bins_tested": 4,
+      "bins_pass": 1,
+      "bins_fail": 3,
+      "chi2_reduced": [2.93, 15.01, 8.78, 0.38],
+      "p_values": [0.000, 0.000, 0.000, 0.976],
+      "details": "3/4 bin incompatibili, χ² troppo alti",
+      "problem": "Profilo GCV con transizione non matcha osservazioni su masse basse-medie",
+      "verdict": "Non competitiva nella forma attuale"
+    },
+    "test3_clusters": {
+      "name": "Cluster Merger",
+      "status": "PASS",
+      "tau_c_Myr": 49.3,
+      "tau_c_err_Myr": 7.6,
+      "chi2_reduced": 0.90,
+      "clusters_tested": 3,
+      "clusters_pass": 3,
+      "individual_results": {
+        "Bullet": {
+          "offset_pred_kpc": 227.1,
+          "offset_obs_kpc": 200.0,
+          "sigma_discrepancy": 0.54,
+          "verdict": "OTTIMO"
+        },
+        "El_Gordo": {
+          "offset_pred_kpc": 126.1,
+          "offset_obs_kpc": 200.0,
+          "sigma_discrepancy": 1.23,
+          "verdict": "BUONO"
+        },
+        "MACS_J0025": {
+          "offset_pred_kpc": 151.4,
+          "offset_obs_kpc": 150.0,
+          "sigma_discrepancy": 0.03,
+          "verdict": "OTTIMO"
+        }
+      },
+      "details": "Un unico τc spiega tutti i merger",
+      "verdict": "Competitiva rispetto a DM collisionless"
+    }
+  },
+  "overall_assessment": {
+    "tests_passed": 2,
+    "tests_failed": 1,
+    "tests_total": 3,
+    "pass_rate": 0.67,
+    "critical_issue": "Weak lensing profile incompatible",
+    "probability_correct": 0.10,
+    "probability_salvable": 0.25,
+    "probability_wrong": 0.65
+  },
+  "comparison_with_dark_matter": {
+    "rotations": "tie",
+    "lensing": "dark_matter_wins",
+    "clusters": "tie",
+    "cmb_bao": "not_tested_but_dark_matter_expected",
+    "overall": "dark_matter_wins"
+  },
+  "next_steps": {
+    "recommended": "Test on real SDSS data before giving up",
+    "alternatives": [
+      "Modify kernel χᵥ(k) form",
+      "Add surface density dependence",
+      "Publish constraints paper",
+      "Hybrid GCV + small DM component"
+    ],
+    "timeline": "1-2 weeks for real data test"
+  },
+  "scientific_value": {
+    "if_correct": "Revolutionary alternative to dark matter",
+    "if_wrong": "Useful constraints on scale-dependent gravity",
+    "methodology": "Rigorous and replicable",
+    "honesty": "Transparent reporting of failures"
+  }
+}

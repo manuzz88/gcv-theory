@@ -1,0 +1,26 @@
+{
+  "final_verdict": "PASS",
+  "tau_c_best_Myr": 49.33887126687807,
+  "tau_c_err_Myr": 7.575757575757578,
+  "chi2_reduced": 0.9046274254401774,
+  "individual_results": {
+    "Bullet": {
+      "offset_pred_kpc": 227.0616204608329,
+      "offset_obs_kpc": 200,
+      "sigma_discrepancy": 0.5412324092166579,
+      "verdict": "\u2705 OTTIMO"
+    },
+    "El Gordo": {
+      "offset_pred_kpc": 126.14534470046273,
+      "offset_obs_kpc": 200,
+      "sigma_discrepancy": 1.2309109216589544,
+      "verdict": "\u2705 BUONO"
+    },
+    "MACS_J0025": {
+      "offset_pred_kpc": 151.37441364055528,
+      "offset_obs_kpc": 150,
+      "sigma_discrepancy": 0.03436034101388188,
+      "verdict": "\u2705 OTTIMO"
+    }
+  }
+}
