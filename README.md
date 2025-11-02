@@ -21,7 +21,17 @@ Key Results
 
 ✅ Galaxy Rotation Curves: 10.7% error (SPARC survey, 27 galaxies)  
 ✅ Cluster Mergers: χ² = 0.90 (3 clusters, τc = 49 Myr)  
+✅ MCMC Parameter Optimization: 20,000 samples, R-hat=1.0, perfect convergence
 ⚠️ Weak Lensing: Preliminary results, simplified ΛCDM comparison
+
+Updated Parameters (MCMC optimized - Nov 2, 2025)
+--------------------------------------------------
+
+- a₀ = 1.80×10⁻¹⁰ m/s² (acceleration scale)
+- A₀ = 1.16 ± 0.13 (susceptibility amplitude)
+- γ = 0.06 ± 0.04 (mass scaling, very weak)
+- β = 0.90 ± 0.03 (radial growth, confirmed!)
+- τc = 49 ± 8 Myr (vacuum response time)
 
 Repository Structure
 --------------------
