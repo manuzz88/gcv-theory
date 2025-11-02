@@ -1,0 +1,16 @@
+{
+  "test": "Strong Lensing (Einstein Rings)",
+  "sample": "SLACS survey (representative)",
+  "n_lenses": 10,
+  "MAPE": {
+    "GCV": 24.110475037730858,
+    "LCDM": 41.68363610670064,
+    "delta": 17.57316106896978
+  },
+  "chi_square": {
+    "GCV_reduced": 2.0903170443962873,
+    "LCDM_reduced": 7.678242359381626
+  },
+  "verdict": "BETTER",
+  "credibility_boost_percent": 3
+}
