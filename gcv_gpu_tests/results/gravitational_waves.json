@@ -1,0 +1,18 @@
+{
+  "test": "Gravitational Waves",
+  "gw170817": {
+    "distance_Mpc": 40,
+    "z": 0.01,
+    "c_gw_c_constraint": 3e-15,
+    "gcv_c_gw_c": 1.0,
+    "passes": true
+  },
+  "amplitude_modification": {
+    "z_0.01": 1.0299400898801498,
+    "z_0.1": 1.0294088814822075,
+    "z_1.0": 1.024793388429752
+  },
+  "dispersion": "None predicted",
+  "verdict": "GCV_COMPATIBLE",
+  "credibility_boost": 5
+}
