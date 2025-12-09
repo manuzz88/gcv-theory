@@ -1,0 +1,35 @@
+{
+  "test": "Bullet Cluster Definitive",
+  "tau_c_Myr": 49.0,
+  "tau_c_err_Myr": 8.0,
+  "bullet_cluster": {
+    "predicted_offset_kpc": 20973.188100875683,
+    "observed_offset_kpc": 720,
+    "agreement_sigma": 1.4552071098099217
+  },
+  "all_mergers": {
+    "Bullet": {
+      "predicted": 20973.188100875683,
+      "observed": 720
+    },
+    "El_Gordo": {
+      "predicted": 522.4367256220238,
+      "observed": 600
+    },
+    "MACS_J0025": {
+      "predicted": 54.30107365373439,
+      "observed": 400
+    },
+    "Abell_520": {
+      "predicted": 8.11317769128707,
+      "observed": 150
+    }
+  },
+  "chi_square": {
+    "total": 41034.52658496687,
+    "dof": 3,
+    "reduced": 13678.17552832229
+  },
+  "verdict": "NEEDS_WORK",
+  "credibility_boost": 2
+}

@@ -1,0 +1,18 @@
+{
+  "test": "Bullet Cluster - Corrected Model",
+  "tau_c_Myr": 49.0,
+  "model": "offset = v * tau_c * g(t/tau_c), g(x) = x*exp(1-x)",
+  "predictions": {
+    "Bullet": 45859.740745355,
+    "El_Gordo": 2284.7087126327574,
+    "MACS_J0025": 316.6243361733784,
+    "Abell_520": 59.13394818722355
+  },
+  "chi_square": {
+    "total": 203887.7488589942,
+    "dof": 3,
+    "reduced": 67962.58295299807
+  },
+  "verdict": "NEEDS_REFINEMENT",
+  "credibility_boost": 3
+}

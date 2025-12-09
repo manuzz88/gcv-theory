@@ -1,0 +1,15 @@
+{
+  "test": "Bullet Cluster - Honest Analysis",
+  "conclusion": "INCONCLUSIVE",
+  "reason": "Offset is primarily due to gas dynamics, same in LCDM and GCV",
+  "gas_model": {
+    "best_fit_t_dec_Myr": 300.0,
+    "chi2": 76066832.21461995,
+    "chi2_dof": 25355610.73820665
+  },
+  "what_would_distinguish": [
+    "Detailed lensing mass profile",
+    "Time evolution of offset",
+    "Galaxy velocity dispersions"
+  ]
+}

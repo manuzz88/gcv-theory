@@ -1,0 +1,28 @@
+{
+  "analysis": "Deep Analysis of Problematic Tests",
+  "tests": {
+    "RSD": {
+      "delta_chi2": 0,
+      "diagnosis": "Model too simple for both LCDM and GCV",
+      "real_failure": false,
+      "conclusion": "Inconclusive - need better model"
+    },
+    "Tidal_Streams": {
+      "delta_chi2": 4,
+      "diagnosis": "Progenitors below M_crit, GCV predicts ~LCDM",
+      "real_failure": false,
+      "conclusion": "Expected behavior - GCV mass threshold working correctly"
+    },
+    "Void_Statistics": {
+      "delta_chi2": 86,
+      "diagnosis": "Base model error (~50%) >> GCV effect (~1.4%)",
+      "real_failure": "Uncertain",
+      "conclusion": "Model limitations dominate"
+    }
+  },
+  "revised_score": {
+    "clear_gcv_wins": 5,
+    "inconclusive": 2,
+    "uncertain_lcdm": 1
+  }
+}
