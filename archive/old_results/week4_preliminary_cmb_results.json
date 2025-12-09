@@ -1,0 +1,12 @@
+{
+  "test": "Preliminary CMB compatibility (SIMPLIFIED)",
+  "cmb_epoch": {
+    "chi_v": 31.861,
+    "fractional_mod": 30.861
+  },
+  "verdict": {
+    "cmb_compatible": "False",
+    "final": "FAIL - CMB incompatible",
+    "interpretation": "GCV modifies CMB too much (\u03c7\u1d65=31.86 >> 1)"
+  }
+}

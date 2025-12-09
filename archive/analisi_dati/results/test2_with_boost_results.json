@@ -1,0 +1,27 @@
+{
+  "final_verdict": "FAIL",
+  "beta_optimal": 4.7,
+  "interpretation": "Lc_lensing = 4.70 \u00d7 Lc_rotations",
+  "results": {
+    "Mandelbaum06_low": {
+      "chi2_red": 61.173611111111114,
+      "p_value": 0.0,
+      "verdict": "\u274c INCOMPATIBILE"
+    },
+    "Mandelbaum06_mid": {
+      "chi2_red": 97.16840277777779,
+      "p_value": 0.0,
+      "verdict": "\u274c INCOMPATIBILE"
+    },
+    "Mandelbaum06_high": {
+      "chi2_red": 109.765625,
+      "p_value": 0.0,
+      "verdict": "\u274c INCOMPATIBILE"
+    },
+    "Leauthaud12_low": {
+      "chi2_red": 54.376736111111114,
+      "p_value": 0.0,
+      "verdict": "\u274c INCOMPATIBILE"
+    }
+  }
+}

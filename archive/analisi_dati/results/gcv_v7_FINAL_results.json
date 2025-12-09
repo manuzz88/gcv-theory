@@ -1,0 +1,30 @@
+{
+  "version": "GCV v7.0 FINAL - Growing Kernel",
+  "verdict": "PARTIAL",
+  "amp_optimal": 1.5328082074356506,
+  "beta_optimal": 0.8294705420434749,
+  "chi2_total": 68.0817585119568,
+  "formula": "\u03c7\u1d65(R) = 1.53 \u00d7 [1 + (R/Lc)^0.83]",
+  "datasets": {
+    "Mandelbaum06_low": {
+      "chi2_red": 3.2737402534973,
+      "p_value": 0.020148583968799927,
+      "verdict": "\u26a0\ufe0f  TENSIONE"
+    },
+    "Mandelbaum06_mid": {
+      "chi2_red": 5.521845909612494,
+      "p_value": 0.0008680707968131696,
+      "verdict": "\u274c INCOMPATIBILE"
+    },
+    "Mandelbaum06_high": {
+      "chi2_red": 7.343001227312946,
+      "p_value": 6.433093500868292e-05,
+      "verdict": "\u274c INCOMPATIBILE"
+    },
+    "Leauthaud12_low": {
+      "chi2_red": 6.555332113562863,
+      "p_value": 0.00019905994335245314,
+      "verdict": "\u274c INCOMPATIBILE"
+    }
+  }
+}

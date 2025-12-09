@@ -1,0 +1,93 @@
+⚠️  cupy non disponibile, uso CPU
+
+📂 Caricamento dati...
+   Lens: 3000 galassie
+   Source: 15000 galassie
+
+============================================================
+🔬 TEST 2: WEAK LENSING
+============================================================
+
+📊 Creazione 4 bin di massa:
+   Bin 1: log(M*) = 8.2-9.5, N=191
+   Bin 2: log(M*) = 9.5-10.7, N=1686
+   Bin 3: log(M*) = 10.7-12.0, N=1073
+   Bin 4: log(M*) = 12.0-13.2, N=49
+
+📊 Bin 1/4: log(M*) = 8.2-9.5
+   Mb medio: 1.51e+09 M☉
+   Stacking lensing signal...
+   Stacking su 191 lens...
+Stacking:   0%|          | 0/191 [00:00<?, ?it/s]Stacking: 100%|██████████| 191/191 [00:00<00:00, 2704.74it/s]
+   Calcolo predizione GCV...
+   Confronto statistico...
+   💾 Plot salvato: plots/lensing_Mb1.5e+09.png
+
+   Risultati:
+      χ²/dof = 16.69
+      p-value = 0.000
+      Verdetto: ❌ INCOMPATIBILE
+
+📊 Bin 2/4: log(M*) = 9.5-10.7
+   Mb medio: 1.62e+10 M☉
+   Stacking lensing signal...
+   Stacking su 1686 lens...
+Stacking:   0%|          | 0/1686 [00:00<?, ?it/s]Stacking:  16%|█▋        | 275/1686 [00:00<00:00, 2745.82it/s]Stacking:  33%|███▎      | 550/1686 [00:00<00:00, 2667.23it/s]Stacking:  49%|████▉     | 824/1686 [00:00<00:00, 2696.81it/s]Stacking:  65%|██████▍   | 1095/1686 [00:00<00:00, 2700.33it/s]Stacking:  81%|████████  | 1366/1686 [00:00<00:00, 2700.68it/s]Stacking:  97%|█████████▋| 1642/1686 [00:00<00:00, 2718.21it/s]Stacking: 100%|██████████| 1686/1686 [00:00<00:00, 2709.10it/s]
+   Calcolo predizione GCV...
+   Confronto statistico...
+   💾 Plot salvato: plots/lensing_Mb1.6e+10.png
+
+   Risultati:
+      χ²/dof = 52.15
+      p-value = 0.000
+      Verdetto: ❌ INCOMPATIBILE
+
+📊 Bin 3/4: log(M*) = 10.7-12.0
+   Mb medio: 1.48e+11 M☉
+   Stacking lensing signal...
+   Stacking su 1073 lens...
+Stacking:   0%|          | 0/1073 [00:00<?, ?it/s]Stacking:  24%|██▍       | 257/1073 [00:00<00:00, 2566.66it/s]Stacking:  49%|████▊     | 523/1073 [00:00<00:00, 2620.47it/s]Stacking:  73%|███████▎  | 786/1073 [00:00<00:00, 2466.94it/s]Stacking:  98%|█████████▊| 1055/1073 [00:00<00:00, 2551.52it/s]Stacking: 100%|██████████| 1073/1073 [00:00<00:00, 2548.31it/s]
+   Calcolo predizione GCV...
+   Confronto statistico...
+   💾 Plot salvato: plots/lensing_Mb1.5e+11.png
+
+   Risultati:
+      χ²/dof = 44.69
+      p-value = 0.000
+      Verdetto: ❌ INCOMPATIBILE
+
+📊 Bin 4/4: log(M*) = 12.0-13.2
+   Mb medio: 1.79e+12 M☉
+   Stacking lensing signal...
+   Stacking su 49 lens...
+Stacking:   0%|          | 0/49 [00:00<?, ?it/s]Stacking: 100%|██████████| 49/49 [00:00<00:00, 2749.52it/s]
+   Calcolo predizione GCV...
+   Confronto statistico...
+   💾 Plot salvato: plots/lensing_Mb1.8e+12.png
+
+   Risultati:
+      χ²/dof = 4.46
+      p-value = 0.000
+      Verdetto: ❌ INCOMPATIBILE
+
+============================================================
+🏁 VERDETTO FINALE TEST 2
+============================================================
+
+Risultati su 4 bin di massa:
+   ✅ Compatibili: 0/4
+   ⚠️  Tensione: 0/4
+   ❌ Incompatibili: 4/4
+
+Dettagli:
+   Bin 1: Mb=1.51e+09 M☉, χ²=16.69, p=0.000 → ❌ INCOMPATIBILE
+   Bin 2: Mb=1.62e+10 M☉, χ²=52.15, p=0.000 → ❌ INCOMPATIBILE
+   Bin 3: Mb=1.48e+11 M☉, χ²=44.69, p=0.000 → ❌ INCOMPATIBILE
+   Bin 4: Mb=1.79e+12 M☉, χ²=4.46, p=0.000 → ❌ INCOMPATIBILE
+
+============================================================
+❌ GCV FALLISCE TEST 2 - WEAK LENSING
+   Troppi bin incompatibili
+============================================================
+
+💾 Risultati salvati in: results/test2_lensing_results.json

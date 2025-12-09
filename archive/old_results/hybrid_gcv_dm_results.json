@@ -1,0 +1,13 @@
+{
+  "model": "Hybrid GCV + Dark Matter",
+  "hypothesis": "GCV for normal galaxies, GCV+DM for ultra-faint dwarfs",
+  "threshold_mass_Msun": 1000000000.0,
+  "best_MDM_Mstar_ratio": 0.0,
+  "MAPE": {
+    "dwarfs_hybrid": 174.39342695490438,
+    "dwarfs_pure_gcv": 174.4,
+    "improvement": 0.006573045095620955,
+    "normal_galaxies": 42.46466125884251
+  },
+  "interpretation": "GCV coherence threshold at M~10^9 M_sun"
+}

@@ -1,0 +1,21 @@
+{
+  "final_verdict": "FAIL",
+  "chi2_red": [
+    16.69230769463608,
+    52.153846193592024,
+    44.69230769230266,
+    4.4617501707195135
+  ],
+  "p_value": [
+    0.0,
+    0.0,
+    0.0,
+    1.1922095666250243e-07
+  ],
+  "verdicts": [
+    "\u274c INCOMPATIBILE",
+    "\u274c INCOMPATIBILE",
+    "\u274c INCOMPATIBILE",
+    "\u274c INCOMPATIBILE"
+  ]
+}
