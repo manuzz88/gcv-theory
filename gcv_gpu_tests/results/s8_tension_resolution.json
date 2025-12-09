@@ -1,0 +1,29 @@
+{
+  "test": "S8 Tension Resolution",
+  "measurements": {
+    "Planck_2018": 0.834,
+    "DES_Y3": 0.776,
+    "KiDS_1000": 0.759,
+    "HSC_Y3": 0.769,
+    "ACT_DR6": 0.84
+  },
+  "gcv_predictions": {
+    "Planck_2018": 0.834,
+    "DES_Y3": 0.8228795024161732,
+    "KiDS_1000": 0.8228795024161732,
+    "HSC_Y3": 0.8230842515559998,
+    "ACT_DR6": 0.834
+  },
+  "tension": {
+    "lcdm_sigma": 2.4844470338930895,
+    "gcv_sigma": 2.7576177891866602,
+    "reduction": -0.2731707552935707
+  },
+  "chi_square": {
+    "lcdm_total": 25.802225427034944,
+    "gcv_total": 17.732630002713393,
+    "improvement": 8.069595424321552
+  },
+  "verdict": "GCV_BETTER",
+  "credibility_boost": 5
+}
