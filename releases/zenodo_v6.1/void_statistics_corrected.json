@@ -1,0 +1,15 @@
+{
+  "test": "Void Statistics - Corrected",
+  "correction": "Using cosmic-scale chi_v ~ 1.03 instead of galaxy-scale",
+  "chi_v_cosmic": 1.0272108843537415,
+  "chi_square": {
+    "size_lcdm": 140.05791628632858,
+    "size_gcv": 156.18116112811677,
+    "profile_lcdm": 2733.9887144744403,
+    "profile_gcv": 2803.728435743422,
+    "total_lcdm": 2874.046630760769,
+    "total_gcv": 2959.9095968715387,
+    "delta": 85.86296611076978
+  },
+  "verdict": "LCDM_BETTER"
+}

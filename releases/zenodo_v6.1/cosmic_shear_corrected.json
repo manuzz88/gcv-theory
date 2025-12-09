@@ -1,0 +1,16 @@
+{
+  "test": "Cosmic Shear - Corrected",
+  "correction": "Compare GCV to LCDM-Planck, not LCDM-DES",
+  "S8": {
+    "planck": 0.834,
+    "des_observed": 0.776,
+    "gcv_effective": 0.8228795024161732
+  },
+  "chi_square": {
+    "lcdm_planck": 138.40574325358324,
+    "lcdm_des": 83.98211030261726,
+    "gcv": 124.97046599182399,
+    "delta_vs_planck": -13.435277261759254
+  },
+  "verdict": "GCV_BETTER"
+}

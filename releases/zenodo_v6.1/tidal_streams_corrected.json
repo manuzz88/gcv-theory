@@ -1,0 +1,10 @@
+{
+  "test": "Tidal Streams - Corrected Model",
+  "correction": "Stream sigma_v from progenitor internal dynamics, not MW potential",
+  "chi_square": {
+    "lcdm": 63.650571192034484,
+    "gcv": 67.58950350156039,
+    "delta": 3.938932309525903
+  },
+  "verdict": "LCDM_BETTER"
+}
