@@ -1,0 +1,28 @@
+{
+  "Tully_Fisher": {
+    "chi2": NaN,
+    "verdict": "Partial explanation"
+  },
+  "RAR": {
+    "chi2": 484.3094747356928,
+    "mean_residual": 0.2344002527181671,
+    "verdict": "Partial match"
+  },
+  "Missing_Satellites": {
+    "verdict": "GCV explains missing satellites!"
+  },
+  "Core_Cusp": {
+    "verdict": "GCV predicts CORES naturally!"
+  },
+  "Hubble_Tension": {
+    "tension_percent": 8.308605341246283,
+    "gcv_bias_percent": 47.20729652369962,
+    "verdict": "GCV could PARTIALLY explain Hubble tension!"
+  },
+  "Cosmic_Coincidence": {
+    "a0": 1.8e-10,
+    "c_H0": 6.547638259624109e-10,
+    "ratio": 0.27490828427399033,
+    "verdict": "GCV provides NATURAL explanation for cosmic coincidence!"
+  }
+}
