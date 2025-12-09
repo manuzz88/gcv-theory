@@ -1,0 +1,20 @@
+{
+  "test": "BTFR Calibration",
+  "calibrated_parameters": {
+    "k": 1.5957100546630565,
+    "A": 1.4580366747967552,
+    "A_TF_calibrated": 17.63752960442698
+  },
+  "observed": {
+    "A_TF": 47
+  },
+  "fit_quality": {
+    "scatter_dex": NaN,
+    "mean_offset_dex": NaN
+  },
+  "physical_interpretation": {
+    "k_meaning": "v_flat measured at r ~ 1.6 * L_c",
+    "A_meaning": "chi_v_max = 1 + A = 2.46"
+  },
+  "formula": "M_bar = k^2 * v^4 / (G * a0 * (1+A)^2)"
+}
