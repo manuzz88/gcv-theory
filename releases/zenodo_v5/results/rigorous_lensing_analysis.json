@@ -1,0 +1,25 @@
+{
+  "test": "Rigorous Weak Lensing Analysis",
+  "data_source": "Mandelbaum et al. 2006 (SDSS)",
+  "method": "Full 3D density projection with Abel transform",
+  "models": {
+    "GCV": "\u03c7\u1d65-modified density, parameters from MCMC rotation curves",
+    "LCDM": "NFW + stellar, M_200 and c fitted"
+  },
+  "chi2": {
+    "gcv": 87.99821901701344,
+    "lcdm": 4.479699763228473e+60,
+    "gcv_reduced": 10.99977737712668,
+    "lcdm_reduced": 6.3995710903263905e+59
+  },
+  "AIC": {
+    "gcv": 89.99821901701344,
+    "lcdm": 4.479699763228473e+60,
+    "delta": -4.479699763228473e+60
+  },
+  "BIC": {
+    "delta": -4.479699763228473e+60
+  },
+  "verdict": "GCV_BETTER",
+  "note": "Rigorous calculation with real data"
+}

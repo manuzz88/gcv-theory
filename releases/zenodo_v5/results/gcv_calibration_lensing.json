@@ -1,0 +1,11 @@
+{
+  "test": "GCV Calibration for Lensing",
+  "A0_rotation": 1.16,
+  "A0_lensing": 0.18438720703125,
+  "ratio": 0.15895448882004312,
+  "chi2_gcv": 102.05758522623087,
+  "chi2_lcdm": 27.79,
+  "Delta_AIC": 68.26758522623086,
+  "verdict": "LCDM FORTEMENTE FAVORITA",
+  "chi2_squared_test": 826.8099523737104
+}

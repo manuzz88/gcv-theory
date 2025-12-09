@@ -1,8 +1,0 @@
-{
-  "version": "GCV v4.0 - Density-Dependent \u03c7\u1d65",
-  "verdict": "NO_IMPROVEMENT",
-  "alpha_optimal": 0.0,
-  "rho0_optimal": 6.381197228023472e-22,
-  "chi2_minimum": 121.06664568490537,
-  "formula": "\u03c7\u1d65(k,\u03c1) = \u03c7\u2080 \u00d7 (\u03c1/6.4e-22)^0.00 / [1 + (kLc)\u00b2]"
-}

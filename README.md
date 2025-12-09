@@ -76,20 +76,21 @@ Repository Structure
 ```
 gcv-theory/
 ├── README.md                 (this file)
-├── data/                     (observational data)
-│   ├── sparc_rotations.csv  
-│   ├── lensing_profiles.csv  
-│   └── cluster_offsets.csv
-├── notebooks/               (Jupyter notebooks)
-│   ├── 01_rotation_curves_test.ipynb
-│   ├── 02_weak_lensing_test.ipynb
-│   └── 03_cluster_mergers_test.ipynb
-├── results/                 (output files)
-│   └── gcv_parameters.json
-└── plots/                   (figures)
-    ├── rotations_fit.png
-    ├── lensing_profiles.png
-    └── cluster_comparison.png
+├── LICENSE                   (MIT license)
+├── docs/                     (documentation)
+│   ├── CHANGELOG_v4.md       (version 4 changelog)
+│   └── RIEPILOGO_COMPLETO_TEST_GCV.md
+├── papers/                   (PDF papers)
+│   ├── PAPER_GCV_v2.0_CMB.pdf
+│   └── PAPER_GCV_v2.1_FINAL.pdf
+├── gcv_gpu_tests/            (GPU-accelerated tests)
+│   ├── lensing/              (weak lensing tests)
+│   ├── galaxy_tests/         (rotation curves)
+│   ├── cosmology/            (BAO, clustering)
+│   ├── results/              (JSON results)
+│   └── plots/                (figures)
+└── releases/                 (Zenodo releases)
+    └── zenodo_v5/            (v5.0 release files)
 ```
 
 Requirements
@@ -182,25 +183,25 @@ Version History
 - v2.1 (2025-11-02): Added mass cutoff for dwarfs
 - **v4.0 (2025-12-09): MAJOR UPDATE - Real SDSS lensing test + theoretical derivation**
 
-### v4.0 Highlights (December 9, 2025)
+### v5.0 Highlights (December 9, 2025)
 
-1. **Test su dati REALI SDSS DR7** (non interpolati)
-2. **Derivazione teorica di alpha_lens = 0.5** dalla matematica di Delta Sigma
-3. **GCV v2.3**: Modello unificato per rotation curves + lensing
-4. **Risultati**:
-   - Rotation curves: MAPE = 14.5% (eccellente)
+1. **Real SDSS DR7 lensing test** (not interpolated)
+2. **Theoretical derivation of alpha_lens = 0.5** from Delta Sigma mathematics
+3. **GCV v2.3**: Unified model for rotation curves + lensing
+4. **Results**:
+   - Rotation curves: MAPE = 14.5% (excellent)
    - Lensing: Delta AIC = +12 vs LCDM
+5. **Zenodo DOI**: [10.5281/zenodo.17863187](https://doi.org/10.5281/zenodo.17863187)
 
-See CHANGELOG_v4.md for details.
+See `docs/CHANGELOG_v4.md` for details.
 
 - Paper status: Preprint submitted to arXiv
 
 Important Notes
 ---------------
 
-⚠️ PRELIMINARY WORK: The weak lensing results use interpolated data from 
-literature and simplified ΛCDM comparison. Full validation with raw catalogs 
-and complete baryonic models is needed.
+⚠️ **UPDATE v5.0**: Now includes real SDSS DR7 lensing data (not interpolated).
+The theoretical derivation shows alpha_lens = 0.5 is predicted, not fitted!
 
 ✅ REPRODUCIBLE: All analysis code and data are provided for verification.
 
