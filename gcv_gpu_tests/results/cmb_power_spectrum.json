@@ -1,0 +1,17 @@
+{
+  "test": "CMB Power Spectrum",
+  "camb_version": "1.6.5",
+  "gcv_at_cmb": {
+    "z": 1100,
+    "f_z": 8.116224332440549e-05,
+    "chi_v": 1.0000024348672998,
+    "modification_percent": 0.000243486729978315
+  },
+  "chi_square": {
+    "lcdm": 5613.578944388112,
+    "gcv": 5617.032623050046,
+    "delta": 3.4536786619337363
+  },
+  "mean_difference_percent": 0.22475215981709598,
+  "verdict": "EQUIVALENT"
+}
