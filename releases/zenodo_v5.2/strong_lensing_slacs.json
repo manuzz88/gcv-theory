@@ -1,0 +1,24 @@
+{
+  "test": "Strong Lensing - SLACS Survey",
+  "n_lenses": 15,
+  "chi_square": {
+    "lcdm": 1650.7473387161187,
+    "gcv": 722.5358248768315,
+    "lcdm_reduced": 117.91052419400849,
+    "gcv_reduced": 51.60970177691654,
+    "delta_chi2": -928.2115138392872
+  },
+  "fractional_error": {
+    "lcdm_mean": 41.59935688551404,
+    "gcv_mean": 27.702376195846856
+  },
+  "gcv_chi_v": {
+    "mean": 1.6293298988446039,
+    "range": [
+      1.5435835405639264,
+      1.6756232844090237
+    ]
+  },
+  "verdict": "GCV_BETTER",
+  "credibility_boost": 7
+}
