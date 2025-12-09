@@ -1,0 +1,8 @@
+{
+  "n_particles": 4000,
+  "time_myr": 200.0,
+  "main_offset_kpc": 35.689105478009836,
+  "bullet_offset_kpc": 19.02180144146797,
+  "observed_offset_kpc": 720,
+  "conclusion": "Offset is due to ram pressure, same in LCDM and GCV"
+}
