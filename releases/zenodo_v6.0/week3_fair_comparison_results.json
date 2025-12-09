@@ -1,0 +1,33 @@
+{
+  "method": "Fair \u039bCDM comparison with baryons",
+  "N_data": 24,
+  "GCV": {
+    "parameters": {
+      "a0": 1.8e-10,
+      "amp0": 1.16,
+      "gamma": 0.06,
+      "beta": 0.9
+    },
+    "n_params": 4,
+    "chi2": 22.331869476733836,
+    "chi2_reduced": 1.1165934738366918,
+    "AIC": 30.331869476733836,
+    "BIC": 35.04408479812562
+  },
+  "LCDM": {
+    "parameters": {
+      "M200_ratio": 1000.0,
+      "c": 20.0
+    },
+    "n_params": 2,
+    "chi2": 343.028736155993,
+    "chi2_reduced": 15.592215279817863,
+    "AIC": 347.028736155993,
+    "BIC": 349.3848438166889
+  },
+  "comparison": {
+    "delta_AIC": -316.69686667925913,
+    "delta_BIC": -314.3407590185633,
+    "verdict": "GCV STRONGLY favored"
+  }
+}

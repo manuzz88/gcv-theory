@@ -1,0 +1,23 @@
+{
+  "test": "Fair Comparison - FIXED",
+  "data": "Real SDSS DR7",
+  "models": {
+    "LCDM": "Power-law (2 params per sample)",
+    "GCV": "Fixed shape from rotation curves (1 param per sample)"
+  },
+  "chi2": {
+    "lcdm_total": 24.69000964180975,
+    "gcv_total": 55.03433646198518,
+    "lcdm_reduced": 1.6460006427873166,
+    "gcv_reduced": 3.23731390952854
+  },
+  "AIC": {
+    "lcdm": 32.69000964180975,
+    "gcv": 59.03433646198518,
+    "delta": 26.344326820175425
+  },
+  "BIC": {
+    "delta": 24.455448861842555
+  },
+  "verdict": "LCDM_BETTER"
+}

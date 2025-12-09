@@ -1,0 +1,31 @@
+{
+  "test": "Tidal Streams - Milky Way Satellites",
+  "n_streams": 5,
+  "streams": [
+    "Sagittarius",
+    "GD-1",
+    "Palomar_5",
+    "Orphan",
+    "Jhelum"
+  ],
+  "chi_square": {
+    "lcdm": 40.62387080156223,
+    "gcv": 55.04113393440455,
+    "lcdm_reduced": 10.155967700390557,
+    "gcv_reduced": 13.760283483601137,
+    "delta_chi2": 14.417263132842322
+  },
+  "fractional_error": {
+    "lcdm_mean": 54.239215439953135,
+    "gcv_mean": 59.78460597476338
+  },
+  "gcv_chi_v": {
+    "Sagittarius": 3.376382114029684,
+    "GD-1": 1.910413804707606,
+    "Palomar_5": 3.2111369959936926,
+    "Orphan": 2.9605132832186722,
+    "Jhelum": 2.359589969814915
+  },
+  "verdict": "LCDM_BETTER",
+  "credibility_boost": 1
+}

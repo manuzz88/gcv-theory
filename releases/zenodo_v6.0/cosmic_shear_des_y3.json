@@ -1,0 +1,30 @@
+{
+  "test": "Cosmic Shear - DES Y3",
+  "n_points": 11,
+  "theta_range_arcmin": [
+    2.5,
+    250.0
+  ],
+  "chi_square": {
+    "lcdm_planck": 138.40574325358324,
+    "lcdm_des": 83.98211030261726,
+    "gcv": 144.1184124756348,
+    "delta_vs_planck": 5.712669222051574,
+    "delta_vs_des": 60.136302173017555
+  },
+  "S8_analysis": {
+    "planck": 0.834,
+    "des": 0.776,
+    "gcv_effective": 0.8260339996211338,
+    "tension_sigma": 3.0
+  },
+  "gcv_modification": {
+    "mean": 1.0193803430056656,
+    "range": [
+      1.0088577655699797,
+      1.0352633998849086
+    ]
+  },
+  "verdict": "LCDM_BETTER",
+  "credibility_boost": 1
+}

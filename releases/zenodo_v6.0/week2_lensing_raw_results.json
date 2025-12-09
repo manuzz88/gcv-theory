@@ -1,0 +1,18 @@
+{
+  "method": "GCV with bootstrap covariance (GPU)",
+  "N_data": 24,
+  "N_bootstrap": 1000,
+  "gpu_time_seconds": 0.7745776176452637,
+  "parameters": {
+    "a0": 1.8e-10,
+    "amp0": 1.16,
+    "gamma": 0.06,
+    "beta": 0.9
+  },
+  "statistics": {
+    "chi2": 2.9124768831643717,
+    "dof": 20,
+    "chi2_reduced": 0.14562384415821858,
+    "p_value": 0.9999968304607488
+  }
+}

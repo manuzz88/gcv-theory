@@ -1,0 +1,15 @@
+{
+  "test": "Rigorous Lensing Derivation",
+  "method": "Modified Poisson -> Sigma -> Delta Sigma",
+  "gcv_params": {
+    "a0": 1.8e-10,
+    "A0": 1.16,
+    "gamma": 0.06,
+    "beta": 0.9
+  },
+  "best_norm": 0.7470558593961263,
+  "chi2": 1824.1197092218886,
+  "chi2_red": 101.33998384566047,
+  "Delta_AIC": 1796.1297092218886,
+  "verdict": "LCDM FAVORITA"
+}

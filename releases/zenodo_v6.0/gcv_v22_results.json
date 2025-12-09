@@ -1,0 +1,23 @@
+{
+  "model": "GCV v2.2",
+  "key_relation": "alpha_lens = beta / 3",
+  "derivation": "From 3D to 2D projection geometry",
+  "optimized_params": {
+    "A0": 1.4232291400653982,
+    "beta": 0.8405324121222741,
+    "alpha_lens": 0.2801774707074247
+  },
+  "lensing": {
+    "chi2": 34.66224266789131,
+    "chi2_red": 2.03895545105243
+  },
+  "rotation_curves": {
+    "MAPE": 48.58242763503663
+  },
+  "comparison": {
+    "AIC_lcdm": 35.79,
+    "AIC_gcv_v22": 38.66224266789131,
+    "Delta_AIC": 2.8722426678913138,
+    "verdict": "LCDM FAVORITA"
+  }
+}

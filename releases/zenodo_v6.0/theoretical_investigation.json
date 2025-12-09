@@ -1,0 +1,31 @@
+{
+  "investigation": "Theoretical Investigation",
+  "models_tested": {
+    "transition": {
+      "A0": 0.5,
+      "R_trans": 277.9682862533942,
+      "n_trans": 0.7010273747713821,
+      "chi2": 63.4891213818364
+    },
+    "alpha_phi": {
+      "best_alpha": 0.30000000000000004,
+      "chi2": 45.69348326813524
+    },
+    "gradient": {
+      "A_lens": 0.18124999999999927,
+      "chi2": 112.62090165020034
+    },
+    "environment": {
+      "A0": 0.18463052339371105,
+      "DS_env_L4": 3.6092483827638997e-06,
+      "DS_env_L2": 5.525757021414175e-06,
+      "chi2": 102.23490794962207
+    }
+  },
+  "best_gcv_model": "GCV alpha_Phi",
+  "comparison_with_lcdm": {
+    "lcdm_aic": 35.79,
+    "best_gcv_aic": 49.69348326813524,
+    "delta_aic": 13.90348326813524
+  }
+}

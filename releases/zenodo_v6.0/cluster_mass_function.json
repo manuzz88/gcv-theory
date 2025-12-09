@@ -1,0 +1,25 @@
+{
+  "test": "Cluster Mass Function",
+  "data": "Planck SZ Cluster Catalog",
+  "n_bins": 7,
+  "total_clusters": 399,
+  "predictions": {
+    "lcdm_planck": 518.7,
+    "lcdm_wl": 37.538022099104,
+    "gcv": 299.6385524808765
+  },
+  "chi_square": {
+    "lcdm_planck": 695.8146206886751,
+    "lcdm_wl": 335.7025194646321,
+    "gcv": 257.5583953424031,
+    "delta_vs_planck": -438.25622534627195,
+    "delta_vs_wl": -78.14412412222896
+  },
+  "sigma8": {
+    "planck": 0.811,
+    "wl": 0.76,
+    "gcv_effective": 0.7995981370135755
+  },
+  "verdict": "GCV_BEST",
+  "credibility_boost": 7
+}

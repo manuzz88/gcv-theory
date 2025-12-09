@@ -1,0 +1,23 @@
+{
+  "test": "Void Statistics",
+  "data": "BOSS void catalog",
+  "z_mean": 0.5,
+  "chi_square": {
+    "size_function": {
+      "lcdm": 140.05791628632858,
+      "gcv": 151.0690418529829
+    },
+    "density_profile": {
+      "lcdm": 2733.9887144744403,
+      "gcv": 2878.119838286001
+    },
+    "total": {
+      "lcdm": 2874.046630760769,
+      "gcv": 3029.188880138984,
+      "delta": 155.14224937821518
+    }
+  },
+  "gcv_chi_v": 1.0272108843537415,
+  "verdict": "LCDM_BETTER",
+  "credibility_boost": 1
+}
