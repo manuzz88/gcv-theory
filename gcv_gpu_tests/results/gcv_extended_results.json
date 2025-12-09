@@ -1,0 +1,23 @@
+{
+  "test": "GCV Extended - Unified Model",
+  "params": {
+    "a0": 1.8e-10,
+    "A0": 1.16,
+    "gamma": 0.06,
+    "beta": 0.9,
+    "alpha_lens": 0.4241553742341184,
+    "R_lens": 999.8643136407239,
+    "delta": -0.5859954262931113,
+    "A_lens": 0.7847251787647878
+  },
+  "chi2_lensing": 22.144182560549453,
+  "chi2_rotation": 7.08484894045168,
+  "Delta_AIC": 0.15418256054945445,
+  "verdict": "EQUIVALENTI",
+  "interpretation": {
+    "alpha_lens": "Esponente di chi_v per lensing",
+    "R_lens": "Scala caratteristica lensing [kpc]",
+    "delta": "Scaling radiale aggiuntivo",
+    "A_lens": "Normalizzazione lensing"
+  }
+}

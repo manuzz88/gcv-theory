@@ -1,0 +1,29 @@
+{
+  "model": "GCV v2.3",
+  "description": "Unified model for lensing and rotation curves",
+  "parameters": {
+    "A0": 0.5,
+    "beta": 0.6309579122466256,
+    "alpha_factor": 0.8,
+    "alpha_lens": 0.5047663297973005,
+    "gamma": 0.06,
+    "a0": 1.8e-10
+  },
+  "lensing": {
+    "chi2": 41.84958748670219,
+    "chi2_red": 2.615599217918887,
+    "N_data": 19
+  },
+  "rotation_curves": {
+    "chi2": 76.04428129590514,
+    "MAPE": 14.530043878001063,
+    "N_galaxies": 8
+  },
+  "comparison": {
+    "AIC_lcdm": 35.79,
+    "AIC_gcv": 47.84958748670219,
+    "Delta_AIC": 12.059587486702192,
+    "verdict_lensing": "LCDM FORTEMENTE FAVORITA",
+    "verdict_rotation": "ECCELLENTE"
+  }
+}

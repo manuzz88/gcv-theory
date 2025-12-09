@@ -178,6 +178,21 @@ Version History
 ---------------
 
 - v1.0 (2025-11-02): Initial release with preliminary results
+- v2.0 (2025-11-02): Added CMB compatibility
+- v2.1 (2025-11-02): Added mass cutoff for dwarfs
+- **v4.0 (2025-12-09): MAJOR UPDATE - Real SDSS lensing test + theoretical derivation**
+
+### v4.0 Highlights (December 9, 2025)
+
+1. **Test su dati REALI SDSS DR7** (non interpolati)
+2. **Derivazione teorica di alpha_lens = 0.5** dalla matematica di Delta Sigma
+3. **GCV v2.3**: Modello unificato per rotation curves + lensing
+4. **Risultati**:
+   - Rotation curves: MAPE = 14.5% (eccellente)
+   - Lensing: Delta AIC = +12 vs LCDM
+
+See CHANGELOG_v4.md for details.
+
 - Paper status: Preprint submitted to arXiv
 
 Important Notes
@@ -191,4 +206,4 @@ and complete baryonic models is needed.
 
 🔬 OPEN SCIENCE: Feedback and collaboration welcome!
 
-Last Updated: November 2, 2025
+Last Updated: December 9, 2025

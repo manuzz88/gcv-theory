@@ -1,0 +1,31 @@
+{
+  "derivation": "Theoretical derivation of alpha_lens",
+  "alpha_fit": 1.0416895994161048,
+  "explanation": "Line-of-sight integration dilutes chi_v effect",
+  "formula": "Sigma_GCV ~ Sigma_b * (1 + chi_v)^alpha",
+  "R_values_kpc": [
+    10,
+    20,
+    50,
+    100,
+    200,
+    500
+  ],
+  "chi_v_values": [
+    2.4614500446098395,
+    3.5885916569160603,
+    6.699881900714063,
+    11.497785165167715,
+    20.450989237042524,
+    45.16484610775199
+  ],
+  "sigma_ratios": [
+    3.9906795643854154,
+    5.39372722521469,
+    9.263601051266058,
+    15.197848652660378,
+    26.053770127145913,
+    53.23802866486161
+  ],
+  "conclusion": "alpha ~ 1.04 from geometric projection"
+}

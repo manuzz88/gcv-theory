@@ -1,0 +1,24 @@
+{
+  "sample": "SPARC-like full sample",
+  "n_galaxies": 175,
+  "n_datapoints": 702,
+  "breakdown": {
+    "LSB": 52,
+    "HSB": 70,
+    "Dwarf": 53
+  },
+  "MAPE": {
+    "overall": 12.698478445601275,
+    "LSB": 12.841675840078508,
+    "HSB": 12.929914398022714,
+    "Dwarf": 12.256741893589851,
+    "MOND_comparison": 12.698478445601275
+  },
+  "statistics": {
+    "median_error": 9.962259991652997,
+    "std_error": 10.876261427146485,
+    "outlier_fraction": 7.4074074074074066,
+    "chi2_reduced": 1.2441919864349613
+  },
+  "verdict": "PASS"
+}

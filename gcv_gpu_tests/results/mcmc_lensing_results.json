@@ -1,0 +1,18 @@
+{
+  "test": "MCMC Lensing Optimization",
+  "N_data": 19,
+  "optimized_params": {
+    "a0": 2.281887590189009e-10,
+    "A0": 4.9679091944535205,
+    "gamma": 0.49694423170544544,
+    "beta": 1.1300471121877016,
+    "alpha_proj": 0.19552176285729939,
+    "norm": 0.7633575530472365
+  },
+  "chi2_gcv": 26.96926664577052,
+  "chi2_lcdm": 21.99,
+  "Delta_AIC": 8.979266645770519,
+  "Delta_BIC": 10.8681446041034,
+  "verdict": "LCDM FAVORITA",
+  "mcmc_results": null
+}

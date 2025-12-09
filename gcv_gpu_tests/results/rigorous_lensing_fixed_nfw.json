@@ -1,0 +1,21 @@
+{
+  "test": "Rigorous Lensing - NFW Corrected",
+  "data": "Mandelbaum et al. 2006",
+  "method": "Standard NFW formulas + GCV Abel projection",
+  "chi2": {
+    "gcv": 125.42273786074719,
+    "lcdm": 7.170632061045357e+50,
+    "gcv_reduced": 15.677842232593399,
+    "lcdm_reduced": 1.1951053435075595e+50
+  },
+  "AIC": {
+    "gcv": 127.42273786074719,
+    "lcdm": 7.170632061045357e+50,
+    "delta": -7.170632061045357e+50
+  },
+  "parameters": {
+    "gcv_k": 1,
+    "lcdm_k": 3
+  },
+  "verdict": "GCV_WINS"
+}

@@ -1,0 +1,62 @@
+{
+  "L4": {
+    "N_data": 10,
+    "GCV": {
+      "chi2": 45.73137846489509,
+      "chi2_red": 5.081264273877232,
+      "A_norm": 0.4482421874999995,
+      "AIC": 47.73137846489509,
+      "BIC": 48.03396355788913
+    },
+    "LCDM": {
+      "chi2": 16.4969937409008,
+      "chi2_red": 2.0621242176126,
+      "M200_ratio": 196.85009479252108,
+      "c": 4.1648475046489954,
+      "AIC": 20.4969937409008,
+      "BIC": 21.102163926888892
+    },
+    "comparison": {
+      "Delta_AIC": 27.23438472399429,
+      "Delta_BIC": 26.93179963100024
+    }
+  },
+  "L2": {
+    "N_data": 9,
+    "GCV": {
+      "chi2": 15.31953126734917,
+      "chi2_red": 1.9149414084186462,
+      "A_norm": 0.5979492187499996,
+      "AIC": 17.31953126734917,
+      "BIC": 17.516755844685388
+    },
+    "LCDM": {
+      "chi2": 5.497152452974669,
+      "chi2_red": 0.7853074932820956,
+      "M200_ratio": 255.5170800493932,
+      "c": 3.2962703941320872,
+      "AIC": 9.49715245297467,
+      "BIC": 9.891601607647107
+    },
+    "comparison": {
+      "Delta_AIC": 7.822378814374501,
+      "Delta_BIC": 7.625154237038281
+    }
+  },
+  "combined": {
+    "N_total": 19,
+    "chi2_gcv": 61.05090973224426,
+    "chi2_lcdm": 21.994146193875466,
+    "Delta_AIC": 35.0567635383688,
+    "Delta_BIC": 33.16788558003591,
+    "verdict": "LCDM FORTEMENTE FAVORITA"
+  },
+  "metadata": {
+    "test": "Definitive SDSS Test",
+    "data_source": "SDSS DR7 (Mandelbaum et al. 2006)",
+    "covariance": "Full matrix with adjacent bin correlations",
+    "GCV_version": "v2.1",
+    "LCDM_model": "NFW + baryonic contribution",
+    "timestamp": "2025-12-09 07:14:23"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "test": "Fair Comparison - Real SDSS Data",
+  "data_source": "SDSS DR7 (Sheldon et al. 2009)",
+  "models": {
+    "LCDM": "Baryonic (NFW + stellar mass)",
+    "GCV": "v2.1 with fixed MCMC parameters"
+  },
+  "sample_L4": {
+    "M_stellar": 150000000000.0,
+    "chi2_lcdm": 9.732970944955112e+21,
+    "chi2_gcv": 299.41747600661677
+  },
+  "sample_L2": {
+    "M_stellar": 50000000000.0,
+    "chi2_lcdm": 6.294582082252982e+18,
+    "chi2_gcv": 170.23351658839223
+  },
+  "combined": {
+    "chi2_lcdm": 9.739265527037366e+21,
+    "chi2_gcv": 469.65099259500903,
+    "chi2_lcdm_reduced": 6.492843684691577e+20,
+    "chi2_gcv_reduced": 27.626528976177003,
+    "AIC_lcdm": 9.739265527037366e+21,
+    "AIC_gcv": 473.65099259500903,
+    "Delta_AIC": -9.739265527037366e+21,
+    "BIC_lcdm": 9.739265527037366e+21,
+    "BIC_gcv": 475.5398705533419,
+    "Delta_BIC": -9.739265527037366e+21
+  },
+  "verdict": "GCV_BETTER",
+  "note": "Fair comparison with baryonic \u039bCDM and real data"
+}

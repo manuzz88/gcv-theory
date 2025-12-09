@@ -1,0 +1,20 @@
+{
+  "test": "Galaxy Clustering Power Spectrum P(k)",
+  "note": "Simplified - full analysis needs CAMB/CLASS",
+  "k_range_h_Mpc": {
+    "min": 0.01,
+    "max": 1.0
+  },
+  "chi_square": {
+    "chi2_lcdm_reduced": 0.9041377180616683,
+    "chi2_gcv_reduced": 1.5022230867205615,
+    "delta_chi2": 58.61236612857154
+  },
+  "fractional_difference": {
+    "mean_percent": 8.618827885174714,
+    "max_percent": 21.960261528947086
+  },
+  "verdict": "PROBLEMATIC",
+  "pass": false,
+  "credibility_boost_percent": 1
+}
