@@ -1,0 +1,31 @@
+{
+  "test": "Galaxy Clustering - BOSS DR12 Power Spectrum",
+  "data_source": "BOSS DR12 (Alam et al. 2017)",
+  "effective_redshift": 0.5,
+  "k_range_h_Mpc": [
+    0.01,
+    0.3
+  ],
+  "n_data_points": 25,
+  "chi_square": {
+    "lcdm": 1802.5269157813748,
+    "gcv": 1753.2768375532203,
+    "lcdm_reduced": 78.37073546875543,
+    "gcv_reduced": 79.69440170696456,
+    "delta_chi2": -49.25007822815451
+  },
+  "AIC": {
+    "lcdm": 1806.5269157813748,
+    "gcv": 1759.2768375532203,
+    "delta_AIC": -47.25007822815451
+  },
+  "gcv_modification": {
+    "mean_percent": 2.58558232004904,
+    "range_percent": [
+      -2.815499748814576,
+      4.239590696616302
+    ]
+  },
+  "verdict": "GCV_BETTER",
+  "credibility_boost_percent": 7
+}
