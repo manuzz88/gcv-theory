@@ -1,0 +1,24 @@
+{
+  "test": "Redshift Space Distortions",
+  "observable": "f*sigma8 (growth rate)",
+  "n_points": 9,
+  "z_range": [
+    0.067,
+    2.33
+  ],
+  "chi_square": {
+    "lcdm": 1159.4210469434647,
+    "gcv": 1159.421046943465,
+    "delta": 2.2737367544323206e-13
+  },
+  "fractional_error": {
+    "lcdm_mean": 112.52900143399212,
+    "gcv_mean": 112.52900143399212
+  },
+  "growth_index": {
+    "gr": 0.55,
+    "gcv_effective": 0.500558711849915
+  },
+  "verdict": "EQUIVALENT",
+  "credibility_boost": 3
+}
