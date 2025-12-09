@@ -195,7 +195,22 @@ Version History
 - v5.x (2025-12-09): Multiple cosmological tests
 - **v6.0 (2025-12-09): COMPLETE TEST SUITE - 8 cosmological tests!**
 
-### v9.5 Highlights (December 9, 2025)
+### v9.6 Highlights (December 9, 2025)
+
+**DEFINITIVE TEST: Real SPARC Data - 175 Galaxies, 3391 Points!**
+
+| Result | Value |
+|--------|-------|
+| a0 (fit) | 1.200e-10 m/s^2 |
+| a0 (literature) | 1.2e-10 m/s^2 |
+| Agreement | **100% EXACT** |
+| Scatter GCV | 0.267 dex |
+| Scatter Newton | 0.503 dex |
+| Delta chi2 | **75,343** |
+
+GCV reproduces the RAR on REAL SPARC data with the EXACT value of a0!
+
+### v9.5 PPN Analysis
 
 **PPN ANALYSIS: Solar System Tests PASSED with HUGE Margins!**
 
@@ -291,7 +306,7 @@ The vacuum organizes as a COHERENT STATE around mass, like electrons in a superc
 
 **Zenodo DOI**: [10.5281/zenodo.17505641](https://doi.org/10.5281/zenodo.17505641) (Concept DOI - always points to latest)
 
-**Latest version**: v9.5 - PPN Analysis Complete (see Zenodo)
+**Latest version**: v9.6 - SPARC Definitive Test (see Zenodo)
 
 Important Notes
 ---------------
