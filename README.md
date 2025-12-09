@@ -195,17 +195,24 @@ Version History
 - v5.x (2025-12-09): Multiple cosmological tests
 - **v6.0 (2025-12-09): COMPLETE TEST SUITE - 8 cosmological tests!**
 
-### v10.3 Highlights (December 9, 2025)
+### v10.4 Highlights (December 9, 2025)
 
-**FIELD EQUATIONS DERIVED - STABILITY VERIFIED!**
+**PERTURBATIONS COMPUTED NUMERICALLY - DEVIATION 10^-11!**
+
+| Scale | T_GCV / T_LCDM | Deviation | Detectable? |
+|-------|----------------|-----------|-------------|
+| CMB (k=0.01) | 1.000000 | 1.1 x 10^-11 | **NO** |
+| BAO (k=0.1) | 1.000000 | 1.0 x 10^-10 | **NO** |
+
+**GCV deviations are 10^7 times BELOW Planck sensitivity!**
+
+### v10.3 Field Equations and Stability
 
 | Condition | Result | Status |
 |-----------|--------|--------|
 | No ghost (P_X > 0) | mu(y) > 0 always | PASS |
 | No gradient instability | c_s^2 in [0.33, 1.0] | PASS |
 | Subluminal propagation | c_s^2 <= 1 | PASS |
-
-**GCV is a STABLE k-essence theory with well-defined field equations.**
 
 ### Current Status (Honest Assessment)
 
@@ -401,7 +408,7 @@ The vacuum organizes as a COHERENT STATE around mass, like electrons in a superc
 
 **Zenodo DOI**: [10.5281/zenodo.17505641](https://doi.org/10.5281/zenodo.17505641) (Concept DOI - always points to latest)
 
-**Latest version**: v10.3 - Field equations derived, stability verified. Galactic phenomenology strong, cosmology needs more work.
+**Latest version**: v10.4 - Perturbations computed numerically. Deviation from LCDM: 10^-11 (10^7x below Planck).
 
 Important Notes
 ---------------

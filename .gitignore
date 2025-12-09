@@ -4,3 +4,4 @@ __pycache__/
 .DS_Store
 *.tar.gz
 .env
+venv_class/
