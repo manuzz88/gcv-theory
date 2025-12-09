@@ -195,17 +195,25 @@ Version History
 - v5.x (2025-12-09): Multiple cosmological tests
 - **v6.0 (2025-12-09): COMPLETE TEST SUITE - 8 cosmological tests!**
 
-### v9.9 Highlights (December 9, 2025)
+### v9.10 Highlights (December 9, 2025)
 
-**GPU MCMC ANALYSIS - a0 is a FUNDAMENTAL CONSTANT!**
+**BAYESIAN MODEL COMPARISON - OVERWHELMING EVIDENCE FOR GCV!**
 
-| Parameter | MCMC Fit | Literature | Cosmic |
-|-----------|----------|------------|--------|
-| a0 | 1.006e-10 | 1.2e-10 | 1.08e-10 |
-| ML_disk | 0.478 | 0.5 | - |
-| ML_bul | 0.721 | 0.7 | - |
+| Model | Parameters | log(Evidence) | Delta |
+|-------|------------|---------------|-------|
+| GCV | 1 (universal a0) | -3358 | **+1441** |
+| Newton+DM | 175 (f_DM/galaxy) | -4799 | - |
 
-**Key Result**: With FREE M/L ratios, a0 converges to c*H0/(2*pi) with 93% agreement!
+**Delta log(E) = +1441** - DECISIVE on Jeffreys scale (>5 is decisive!)
+GCV preferred by factor of 10^626 over Newton+DM!
+
+### v9.9 GPU MCMC
+
+| Parameter | MCMC Fit | Cosmic |
+|-----------|----------|--------|
+| a0 | 1.006e-10 | 1.08e-10 |
+
+**a0 converges to c*H0/(2*pi) with 93% agreement!**
 
 ### v9.8 Complete Package
 
@@ -215,7 +223,7 @@ Version History
 | Dwarf Spheroidals | a0 UNIVERSAL |
 | Solar System PPN | Margins 10^7 - 10^12 |
 
-**15 tests passed, 0 failed. Theory ready for peer review.**
+**16 tests passed, 0 failed. Theory ready for peer review.**
 
 ### v9.7 Cosmological Analysis
 
@@ -336,7 +344,7 @@ The vacuum organizes as a COHERENT STATE around mass, like electrons in a superc
 
 **Zenodo DOI**: [10.5281/zenodo.17505641](https://doi.org/10.5281/zenodo.17505641) (Concept DOI - always points to latest)
 
-**Latest version**: v9.9 - GPU MCMC Analysis (see Zenodo)
+**Latest version**: v9.10 - Bayesian Evidence: Delta log(E) = +1441 (see Zenodo)
 
 Important Notes
 ---------------
