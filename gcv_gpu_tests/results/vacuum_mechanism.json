@@ -1,0 +1,23 @@
+{
+  "test": "Vacuum Organization Mechanism",
+  "mechanisms": {
+    "vacuum_polarization": {
+      "chi2": 5.053208452975156,
+      "best_param": 0.0493369048190172
+    },
+    "coherent_state": {
+      "chi2": 0.5040173412809008,
+      "best_param": 0.9568947555639169
+    },
+    "casimir_like": {
+      "chi2": 34.95177324019345,
+      "best_param": 0.4612668975367622
+    },
+    "emergent_mond": {
+      "chi2": 141.0450669734923,
+      "best_param": "none (a0 fixed)"
+    }
+  },
+  "winner": "Coherent State",
+  "interpretation": "chi_v likely depends on local acceleration, suggesting emergent gravity"
+}
