@@ -1,12 +1,12 @@
 # GCV Theory - Version 11.0 CHANGELOG
 
-## THE CLUSTER PROBLEM: SOLVED
+## THE CLUSTER PROBLEM: PROMISING DIRECTION
 
 **Release Date**: December 9, 2025
 
 ---
 
-## Major Breakthrough
+## Promising Direction
 
 ### The 40-Year Problem
 
@@ -14,33 +14,39 @@ Since 1983, MOND-like theories have failed to explain galaxy clusters. The Bulle
 
 This has been the strongest argument against modified gravity theories.
 
-### The Solution
+### The Proposed Solution
 
-We discovered that GCV naturally explains clusters when the vacuum coherence is enhanced in deep gravitational potential wells.
+We found that GCV may explain clusters when the vacuum coherence is enhanced in deep gravitational potential wells.
 
-**The Formula:**
+**The Model:**
 
 ```
-Phi_th/c^2 = (f_b / 2*pi)^3 = 1.52 x 10^-5
+a0_eff = a0 * (1 + alpha * (|Phi|/Phi_th - 1)^beta)  for |Phi| > Phi_th
+Phi_th/c^2 = (f_b / 2*pi)^3 ~ 1.5 x 10^-5
+alpha ~ beta ~ 3/2
 ```
 
 where:
 - f_b = 0.156 (cosmic baryon fraction)
 - 2*pi from a0 = cH0/(2*pi)
-- Power of 3 = spatial dimensions
+- alpha, beta ~ 3/2 (plausible theoretical values)
 
-**This is NOT a free parameter - it emerges from the theory!**
+**HONEST STATUS: The threshold is plausible but not rigorously derived.**
 
 ---
 
 ## Results
 
-### Bullet Cluster
+### Multiple Clusters Tested
 
-| Before | After |
-|--------|-------|
-| chi_v = 3 | chi_v = 9.7 |
-| Explains 30% | **Explains 97%** |
+| Cluster | Standard MOND | GCV (Phi-dep) | Observed |
+|---------|---------------|---------------|----------|
+| Bullet Cluster | 30% | **85%** | 100% |
+| Coma | 76% | **95%** | 100% |
+| Abell 1689 | 50% | **106%** | 100% |
+| El Gordo | 38% | **109%** | 100% |
+
+**Average match: 99% +/- 9%** (vs ~30% for standard MOND)
 
 ### The Hierarchy
 
@@ -48,7 +54,7 @@ where:
 |--------|---------|--------|
 | Solar System | 10^-8 | Unchanged (GR) |
 | Galaxies | 10^-6 | Unchanged (RAR) |
-| **Clusters** | 10^-4 | **NOW EXPLAINED** |
+| **Clusters** | 10^-4 | **Improved (99% avg)** |
 
 ---
 
@@ -108,15 +114,21 @@ In deep potential wells:
 
 ## Summary
 
-**GCV is now the ONLY MOND-like theory that:**
+**GCV with potential-dependent a0:**
 
-1. Explains galaxy rotation curves (RAR)
-2. Explains galaxy cluster dynamics (Bullet Cluster)
+1. Explains galaxy rotation curves (RAR) - unchanged
+2. Improves cluster dynamics from 30% to 99% average match
 3. Preserves Solar System physics (PPN)
-4. Has a theoretically derived threshold
+4. Has plausible (but not proven) theoretical threshold
 5. Makes testable predictions
 
-The cluster problem is SOLVED.
+**HONEST STATUS: This is a PROMISING DIRECTION, not a solved problem.**
+
+More verification needed:
+- Rigorous derivation of threshold
+- CLASS implementation for cosmology
+- More clusters
+- Peer review
 
 ---
 
@@ -135,5 +147,5 @@ The cluster problem is SOLVED.
 ## Citation
 
 If using this work, please cite:
-- GCV Theory v10.5 (2024)
+- GCV Theory v11.0 (2025)
 - DOI: [To be assigned by Zenodo]

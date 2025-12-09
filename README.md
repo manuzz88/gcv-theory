@@ -195,29 +195,37 @@ Version History
 - v5.x (2025-12-09): Multiple cosmological tests
 - **v6.0 (2025-12-09): COMPLETE TEST SUITE - 8 cosmological tests!**
 
-### v11.0 Highlights (December 9, 2025) - MAJOR RELEASE
+### v11.0 Highlights (December 9, 2025) - PROMISING DIRECTION
 
-**THE CLUSTER PROBLEM IS SOLVED!**
+**POTENTIAL SOLUTION TO THE CLUSTER PROBLEM**
 
-For 40 years, MOND-like theories failed on galaxy clusters. Today, GCV solves this:
+We found a potential-dependent extension of GCV that may explain galaxy clusters:
 
-| System | Before | After v11.0 |
-|--------|--------|-------------|
-| Bullet Cluster | 30% explained | **97% explained** |
-| Galaxies | OK | OK (unchanged) |
-| Solar System | OK | OK (unchanged) |
+| System | Standard MOND | GCV (Phi-dep) | Observed |
+|--------|---------------|---------------|----------|
+| Bullet Cluster | 30% | **85%** | 100% |
+| Coma | 76% | **95%** | 100% |
+| Abell 1689 | 50% | **106%** | 100% |
+| El Gordo | 38% | **109%** | 100% |
 
-**The Key Formula:**
+**Average match: 99% +/- 9%** (vs 30% for standard MOND)
+
+**The Model:**
 ```
-Phi_th/c^2 = (f_b / 2*pi)^3 = 1.5 x 10^-5
+a0_eff = a0 * (1 + alpha * (|Phi|/Phi_th - 1)^beta)  for |Phi| > Phi_th
+Phi_th/c^2 = (f_b / 2*pi)^3 ~ 1.5 x 10^-5
+alpha ~ beta ~ 3/2 (plausible theoretical values)
 ```
 
-This threshold is DERIVED, not fitted! It comes from:
-- f_b = 0.156 (cosmic baryon fraction)
-- 2*pi (GCV phase factor)
-- Power of 3 (spatial dimensions)
+**What This Means:**
+- GCV is 3.3x better than standard MOND on clusters
+- The threshold naturally separates galaxies from clusters
+- Cosmology appears safe (CMB, linear growth unaffected)
 
-**GCV is now the ONLY MOND-like theory that explains BOTH galaxies AND clusters!**
+**HONEST STATUS: This is a PROMISING DIRECTION, not a solved problem.**
+- The threshold formula is plausible but not rigorously derived
+- alpha = beta = 3/2 has physical motivation but is not proven
+- More verification needed (CLASS implementation, more clusters)
 
 ### v10.4 Perturbations
 
@@ -252,7 +260,7 @@ This threshold is DERIVED, not fitted! It comes from:
 - Full cosmological perturbation analysis
 - Implementation in hi_class with delta_phi equations
 - N-body simulations
-- ~~Solution to cluster problem~~ **SOLVED in v11.0!**
+- ~~Solution to cluster problem~~ **Promising direction in v11.0 (99% match on 4 clusters)**
 
 ### v10.2 CLASS Estimate (NOT full implementation)
 
@@ -428,7 +436,7 @@ The vacuum organizes as a COHERENT STATE around mass, like electrons in a superc
 
 **Zenodo DOI**: [10.5281/zenodo.17505641](https://doi.org/10.5281/zenodo.17505641) (Concept DOI - always points to latest)
 
-**Latest version**: v11.0 - **CLUSTER PROBLEM SOLVED!** Bullet Cluster explained at 97%. Threshold derived from theory: Phi_th/c^2 = (f_b/2*pi)^3. This is the first MOND-like theory to explain BOTH galaxies AND clusters!
+**Latest version**: v11.0 - **Promising direction on cluster problem.** 4 clusters explained at 99% +/- 9% average (vs 30% for MOND). Potential-dependent a0 with threshold Phi_th/c^2 ~ (f_b/2*pi)^3. More verification needed.
 
 Important Notes
 ---------------

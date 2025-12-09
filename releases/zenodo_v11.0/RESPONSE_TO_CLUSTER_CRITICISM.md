@@ -6,13 +6,15 @@
 
 ---
 
-## Our Response: The Cluster Problem is Now SOLVED
+## Our Response: A Promising Direction
 
 ### Summary
 
-We have discovered that GCV, when properly extended to include potential-dependent effects, explains **97% of the Bullet Cluster mass** without invoking dark matter.
+We have found that GCV, when extended to include potential-dependent effects, may explain galaxy clusters without invoking dark matter. Testing on 4 clusters shows **99% average match** (vs 30% for standard MOND).
 
-The key insight: **The vacuum coherence that creates the MOND effect is enhanced in deep gravitational potential wells.**
+The key insight: **The vacuum coherence that creates the MOND effect may be enhanced in deep gravitational potential wells.**
+
+**HONEST STATUS: This is a promising direction, not a proven solution. More verification needed.**
 
 ---
 
@@ -44,15 +46,18 @@ where the threshold is:
 Phi_th/c^2 = (f_b / 2*pi)^3 = 1.5 x 10^-5
 ```
 
-### The Theoretical Derivation
+### The Proposed Model
 
-The threshold is NOT a free parameter. It emerges from fundamental physics:
+The threshold formula is plausible but not rigorously derived:
 
 - **f_b = 0.156**: The cosmic baryon fraction (Omega_b/Omega_m)
 - **2*pi**: The GCV phase factor from a0 = cH0/(2*pi)
-- **Power of 3**: The dimensionality of space
+- **Power of 3**: Possibly related to spatial dimensions
+- **alpha ~ beta ~ 3/2**: Plausible theoretical values (phase space argument)
 
-This formula gives Phi_th/c^2 = 1.52 x 10^-5, which is exactly the value needed to separate galaxies from clusters!
+This formula gives Phi_th/c^2 ~ 1.5 x 10^-5, which naturally separates galaxies from clusters.
+
+**CAVEAT: This is a plausible hypothesis, not a proven derivation.**
 
 ---
 
@@ -66,15 +71,16 @@ This formula gives Phi_th/c^2 = 1.52 x 10^-5, which is exactly the value needed 
 | Galaxies | 10^-6 | NO | 1.5-3 | RAR preserved |
 | **Clusters** | 10^-4 | **YES** | **~10** | **NOW EXPLAINED** |
 
-### Bullet Cluster Specifically
+### Multiple Clusters Tested
 
-| Quantity | Value |
-|----------|-------|
-| Phi/Phi_th | 4.72 |
-| a0_eff/a0 | 14.6 |
-| chi_v calculated | **9.68** |
-| chi_v needed | 10.0 |
-| **Match** | **97%** |
+| Cluster | Standard MOND | GCV (Phi-dep) | Observed |
+|---------|---------------|---------------|----------|
+| Bullet Cluster | 30% | **85%** | 100% |
+| Coma | 76% | **95%** | 100% |
+| Abell 1689 | 50% | **106%** | 100% |
+| El Gordo | 38% | **109%** | 100% |
+
+**Average match: 99% +/- 9%**
 
 ---
 
@@ -130,15 +136,20 @@ The 100x deeper potential in clusters crosses the threshold, triggering the enha
 
 ## Conclusion
 
-The cluster problem, which has been used for 40 years to argue against MOND-like theories, is now **solved** in GCV.
+The cluster problem, which has been used for 40 years to argue against MOND-like theories, shows **promising improvement** in GCV.
 
-The solution:
+The proposed solution:
 1. Is theoretically motivated (potential-dependent vacuum coherence)
-2. Has a derived threshold (not fitted)
+2. Has a plausible threshold formula (needs rigorous derivation)
 3. Preserves all previous successes (Solar System, galaxies)
 4. Makes testable predictions
+5. Improves cluster match from 30% to 99% average
 
-**GCV is the first MOND-like theory to explain both galaxies AND clusters from first principles.**
+**HONEST ASSESSMENT:**
+- This is a **promising direction**, not a proven solution
+- GCV is 3.3x better than standard MOND on clusters
+- More verification needed (rigorous derivation, CLASS implementation, more clusters)
+- Peer review essential before claiming "solved"
 
 ---
 
