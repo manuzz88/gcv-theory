@@ -1,0 +1,25 @@
+{
+  "test": "Black Hole Shadow",
+  "M87": {
+    "observed_uas": 42.0,
+    "GR_prediction_uas": 39.6939888804309,
+    "GCV_prediction_uas": 39.694331411997666,
+    "chi_v": 1.000008629305757,
+    "chi2_GR": 0.5908541426195923,
+    "chi2_GCV": 0.5906786264111862
+  },
+  "SgrA": {
+    "observed_uas": 51.8,
+    "GR_prediction_uas": 52.06209727305232,
+    "GCV_prediction_uas": 52.06210046998833,
+    "chi_v": 1.0000000614062086,
+    "chi2_GR": 0.012985818627876317,
+    "chi2_GCV": 0.012986135419301515
+  },
+  "combined": {
+    "total_chi2_GR": 0.6038399612474686,
+    "total_chi2_GCV": 0.6036647618304877,
+    "delta_chi2": -0.00017519941698096453
+  },
+  "verdict": "EQUIVALENT"
+}
