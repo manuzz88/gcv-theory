@@ -1,4 +1,4 @@
-# GCV v13.0 — CLASS Modified Gravity: The Definitive Test
+# GCV v15.0 — CLASS Modified Gravity: The Definitive Test
 
 ## MAJOR MILESTONE: Modified CLASS Boltzmann Solver with GCV
 
