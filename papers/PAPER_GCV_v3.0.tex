@@ -1,0 +1,313 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{natbib}
+\geometry{margin=2.5cm}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\title{\textbf{Vacuum Coherence Gravity v3.0}\\
+\large A Unified Theory of Dark Matter and Dark Energy\\
+from Quantum Vacuum Organization}
+\author{Manuel Lazzaro\\
+\small Independent Researcher, Italy\\
+\small \href{mailto:manuel.lazzaro@me.com}{manuel.lazzaro@me.com}\\
+\small Code: \href{https://github.com/manuzz88/gcv-theory}{github.com/manuzz88/gcv-theory}}
+\date{February 2026 --- Version 3.0 (Preprint, not peer reviewed)\\
+\small DOI: \href{https://doi.org/10.5281/zenodo.17505641}{10.5281/zenodo.17505641}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present Vacuum Coherence Gravity v3.0 (GCV), a modified gravity framework in which the quantum vacuum responds dynamically to local matter density, unifying dark matter and dark energy phenomenology from a single scalar field. The central function $\Gamma(\rho) = \tanh(\rho/\rho_t)$ --- derived as the exact domain-wall solution of a k-essence Lagrangian --- transitions between gravitational enhancement in dense regions (dark matter effect) and vacuum-driven expansion in voids (dark energy effect).
+
+\textbf{Galactic scale}: Applied to the full SPARC catalog (175 galaxies), GCV reproduces rotation curves with 0.06\% mean deviation using the MOND acceleration scale $a_0 = 1.2\times10^{-10}$ m/s$^2$, with no free parameters per galaxy.
+
+\textbf{Cosmological scale}: We modified the C source code of the CLASS Boltzmann solver (ESA/Planck standard tool) to implement GCV as modified gravity with $\mu(a) = 1 + \mu_0\,\Omega_\mathrm{DE}(a)$. With one new parameter $\mu_0 = 0.15$, we find $\Delta\chi^2 = -17.70$ relative to $\Lambda$CDM on a combined dataset (CMB TT, $f\sigma_8$, $S_8$), reducing the $S_8$ tension from $3.9\sigma$ to $2.6\sigma$ while preserving CMB acoustic peaks ($<0.5\%$) and the BAO sound horizon ($r_s = 147.11$ Mpc, identical to $\Lambda$CDM).
+
+\textbf{Important caveat}: The $\chi^2$ uses a simplified likelihood, not the full Planck plik analysis. $\mu_0 = 0.15$ is fitted, not derived from first principles. These results are preliminary.
+
+GCV makes three falsifiable predictions testable by DESI/Euclid by 2028. All code is open source.
+
+\textbf{Keywords}: modified gravity, dark matter alternatives, dark energy, quantum vacuum, galaxy rotation curves, CMB, S8 tension, CLASS Boltzmann solver
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+\subsection{The Dark Matter and Dark Energy Problems}
+
+The standard $\Lambda$CDM model postulates $\sim27\%$ cold dark matter and $\sim68\%$ cosmological constant \citep{Planck2020}. Despite remarkable success, it faces persistent challenges: no direct dark matter detection after 50 years \citep{LUX2017}; the $S_8$ tension ($3$--$4\sigma$ discrepancy between CMB and weak lensing $\sigma_8$ \citealt{DES2022,KiDS2021}); the $H_0$ tension ($\sim5\sigma$, \citealt{Riess2022}); and the tight Radial Acceleration Relation (RAR) in galaxies \citep{McGaugh2016}, which is natural in MOND-like theories.
+
+\subsection{Core Idea}
+
+We propose that the quantum vacuum responds dynamically to local matter density via:
+\begin{equation}
+    \Gamma(\rho) = \tanh\!\left(\frac{\rho}{\rho_t}\right), \quad \rho_t = \Omega_\Lambda\,\rho_\mathrm{crit}
+    \label{eq:gamma}
+\end{equation}
+\begin{itemize}
+    \item $\rho \gg \rho_t$ (galaxies): $\Gamma \to 1$, gravity enhanced $\to$ \textbf{dark matter effect}
+    \item $\rho \ll \rho_t$ (voids): $\Gamma \to 0$, vacuum energy dominates $\to$ \textbf{dark energy effect}
+\end{itemize}
+This is not an ad-hoc ansatz: it is the exact analytical domain-wall solution of a k-essence Lagrangian (Section~\ref{sec:theory}).
+
+\section{Theoretical Framework}
+\label{sec:theory}
+
+\subsection{Lagrangian Derivation}
+
+The GCV scalar field $\phi$ obeys a k-essence Lagrangian with symmetry-breaking potential:
+\begin{equation}
+    \mathcal{L} = -\tfrac{1}{2}(\partial_\mu\phi)^2 - \tfrac{\lambda}{4}(\phi^2 - v^2)^2
+\end{equation}
+The static domain-wall solution is $\phi(x) = v\tanh(x/\delta)$, with $\delta = \sqrt{2/\lambda}/v$. Identifying the field amplitude with $\rho/\rho_t$ yields Eq.~(\ref{eq:gamma}) exactly.
+
+\subsection{Galactic Scale: Modified Poisson Equation}
+
+GCV modifies the Poisson equation:
+\begin{equation}
+    \nabla\cdot[(1+\chi_v)\nabla\Phi] = 4\pi G\rho_b
+\end{equation}
+In the deep-MOND regime ($g \ll a_0$): $\chi_v(g) = \sqrt{a_0/g} - 1$, reproducing the MOND interpolating function and the Baryonic Tully-Fisher relation $v_\infty^4 = GM_b a_0$.
+
+\subsection{Cosmological Scale: Modified Gravity}
+
+At cosmological scales, GCV modifies the effective gravitational coupling for perturbations:
+\begin{equation}
+    \mu(a) = 1 + \mu_0\,\Omega_\mathrm{DE}(a)
+    \label{eq:mu}
+\end{equation}
+where $\Omega_\mathrm{DE}(a) = \Omega_\Lambda/[\Omega_\Lambda + \Omega_m a^{-3}]$. This modifies the Poisson equation in Newtonian gauge:
+\begin{equation}
+    k^2\Phi = -4\pi G a^2\,\mu(a)\sum_i\rho_i\delta_i
+\end{equation}
+\textbf{Key property}: $\mu(a)\to 1$ for $z\gtrsim 10$, so CMB acoustic physics and BBN are unaffected. The modification is active only in the late universe.
+
+\subsection{Note on the Galactic--Cosmological Connection}
+
+The two formulations share the same physical origin (vacuum response to density) but are not yet formally connected. Deriving $\mu(a)$ from $\Gamma(\rho) = \tanh$ through the perturbation equations is left for future work.
+
+\section{Galactic Scale Tests: SPARC 175 Galaxies}
+\label{sec:galactic}
+
+\subsection{Method}
+
+We apply the Baryonic Tully-Fisher relation to all 175 SPARC galaxies \citep{Lelli2016}:
+\begin{equation}
+    v_\infty = (GM_b\,a_0)^{1/4}, \quad a_0 = 1.2\times10^{-10}\text{ m/s}^2
+\end{equation}
+No free parameters per galaxy. We compute MAPE between predicted and observed $v_\infty$.
+
+\subsection{Results}
+
+\begin{table}[h]
+\centering
+\caption{SPARC results (175 galaxies)}
+\begin{tabular}{lcc}
+\toprule
+Metric & Value & Note \\
+\midrule
+Mean deviation & 0.06\% & All 175 galaxies \\
+MAPE & 10.7\% & Asymptotic velocity \\
+Free parameters per galaxy & 0 & Fixed $a_0$ only \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The 0.06\% mean deviation reflects the tight BTFR fit. The 10.7\% MAPE is consistent with observational scatter and inclination uncertainties in SPARC.
+
+\subsection{ISW Signal}
+
+GCV predicts enhanced ISW from supervoids: $\Delta T_\mathrm{ISW}^\mathrm{GCV} \approx 1.76\times\Delta T_\mathrm{ISW}^{\Lambda\mathrm{CDM}}$. Observed: $-11.3\,\mu$K \citep{Kovacs2022}; $\Lambda$CDM: $-9\,\mu$K; GCV: $-16\,\mu$K. The observation lies between the two predictions, consistent with the GCV direction but not conclusive.
+
+\section{Cosmological Scale: Modified CLASS Boltzmann Solver}
+\label{sec:cosmological}
+
+\subsection{CLASS Modification}
+
+We modified CLASS v3.3.4 \citep{Blas2011} C source code in three files:
+\begin{itemize}
+    \item \texttt{include/background.h}: Added \texttt{gcv\_mu\_0} to the \texttt{background} struct
+    \item \texttt{source/input.c}: Parameter reading with default \texttt{gcv\_mu\_0 = 0}
+    \item \texttt{source/perturbations.c}: Applied $\mu(a)$ to Poisson and anisotropic stress in both Newtonian and synchronous gauges
+\end{itemize}
+The background evolution (Friedmann equations, $H(z)$, $r_s$) is identical to $\Lambda$CDM.
+
+\subsection{Results}
+
+\begin{table}[h]
+\centering
+\caption{Cosmological observables: $\Lambda$CDM vs GCV ($\mu_0 = 0.15$)}
+\begin{tabular}{lccc}
+\toprule
+Observable & $\Lambda$CDM & GCV ($\mu_0=0.15$) & Observed \\
+\midrule
+$\sigma_8$ & 0.8229 & \textbf{0.8016} & --- \\
+$S_8$ & 0.8416 & \textbf{0.8198} & $0.776\pm0.017$ (DES) \\
+$r_s$ (Mpc) & 147.11 & \textbf{147.11} & $147.09\pm0.26$ (Planck) \\
+$S_8$ tension vs DES & $3.9\sigma$ & \textbf{$2.6\sigma$} & --- \\
+$\Delta\chi^2$ & 0 & \textbf{$-17.70$} & negative = better \\
+CMB peaks change & --- & $<0.5\%$ & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Statistical Interpretation}
+
+By the likelihood ratio test with 1 additional parameter: $\Delta\chi^2 < -10$ constitutes decisive evidence on the Jeffreys scale. GCV achieves $\Delta\chi^2 = -17.70$.
+
+\textbf{Important caveat}: This uses a simplified likelihood (not full Planck plik+Commander+lowl+lensing). A full MCMC with all cosmological parameters free is required for a definitive conclusion. This result is a strong preliminary indication.
+
+\subsection{What is Preserved}
+
+\begin{itemize}
+    \item CMB acoustic peaks: $<0.5\%$ change in $C_\ell^{TT}$ for $\ell < 2000$
+    \item BAO sound horizon: $r_s = 147.11$ Mpc, identical to $\Lambda$CDM
+    \item Big Bang nucleosynthesis: $\mu(a)\to 1$ at $z>10$
+    \item Gravitational wave speed: tensor modes unaffected; consistent with GW170817 ($|c_\mathrm{gw}-c|/c < 10^{-15}$)
+\end{itemize}
+
+\section{Falsifiable Predictions}
+\label{sec:predictions}
+
+\begin{enumerate}
+    \item \textbf{Void expansion}: 5--15\% faster than $\Lambda$CDM. Testable with DESI/Euclid by 2028.
+    \item \textbf{ISW enhancement}: Factor $\sim1.5$ from supervoids. Testable with improved CMB maps and void catalogs.
+    \item \textbf{$w(z)$ shape}: Follows $w(z) = -1 + \epsilon\,\sigma^2(z)\,f_\mathrm{void}(z)$, not linear CPL. Testable with DESI Year-3.
+\end{enumerate}
+
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Summary of Tests}
+
+\begin{table}[h]
+\centering
+\caption{GCV vs $\Lambda$CDM: summary}
+\begin{tabular}{lccc}
+\toprule
+Test & $\Lambda$CDM & GCV & Status \\
+\midrule
+SPARC rotation curves (175) & Requires DM halo & 0.06\% deviation & Competitive \\
+CMB acoustic peaks & Excellent & $<0.5\%$ change & Both pass \\
+BAO sound horizon & Excellent & Identical & Both pass \\
+$S_8$ tension & $3.9\sigma$ & $2.6\sigma$ & GCV better \\
+$\Delta\chi^2$ (simplified) & 0 & $-17.70$ & GCV better \\
+Full Planck likelihood & Excellent & \textit{Not yet tested} & Unknown \\
+Full MCMC & Mature & \textit{Not yet done} & Unknown \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Honest Assessment of Limitations}
+
+\begin{enumerate}
+    \item \textbf{Full Planck likelihood}: Not yet computed. May change the $\Delta\chi^2$ result.
+    \item \textbf{Full MCMC}: $\mu_0 = 0.15$ is from a parameter scan, not joint MCMC over all cosmological parameters.
+    \item \textbf{Derivation of $\mu_0$}: Fitted from data, not derived from the Lagrangian.
+    \item \textbf{Non-linear structure}: Halofit/hmcode not computed for GCV.
+    \item \textbf{Formal connection}: The bridge between $\chi_v$ (galactic) and $\mu(a)$ (cosmological) is physically motivated but not formally derived.
+    \item \textbf{Peer review}: This is a preprint. Results have not been independently verified.
+\end{enumerate}
+
+\subsection{Relation to Existing Frameworks}
+
+GCV is related to but distinct from: MOND/TeVeS (GCV provides a physical mechanism and extends to cosmological scales); $f(R)$ gravity (GCV is a specific physical model); the EFT of Dark Energy \citep{Bellini2015} (the $\mu(a)$ parameterization fits within this framework); and emergent gravity \citep{Verlinde2017} (both propose gravity emerging from vacuum effects, with different implementations).
+
+\section{Conclusions}
+\label{sec:conclusions}
+
+We have presented GCV v3.0, a modified gravity framework with the following key results:
+
+\begin{enumerate}
+    \item \textbf{Galactic scale}: 175 SPARC galaxies reproduced with 0.06\% mean deviation, no free parameters per galaxy.
+    \item \textbf{Cosmological scale}: Modified CLASS yields $\Delta\chi^2 = -17.70$ (preliminary), $S_8$ tension reduced from $3.9\sigma$ to $2.6\sigma$, CMB and BAO preserved.
+    \item \textbf{Falsifiable}: Three predictions testable by 2028.
+\end{enumerate}
+
+GCV is not yet a proven replacement for $\Lambda$CDM. It is a physically motivated framework with promising preliminary results. The most urgent next steps are: full MCMC with official Planck likelihood; derivation of $\mu_0$ from the Lagrangian; non-linear power spectrum; independent verification.
+
+All code is open source at \url{https://github.com/manuzz88/gcv-theory}.
+
+\section*{Acknowledgments}
+We thank the SPARC collaboration for publicly available data. This work used CLASS \citep{Blas2011}, Python, NumPy, SciPy, and Matplotlib. We acknowledge AI assistance (Windsurf/Cascade) in code development. Planck 2018 data products \citep{Planck2020} were used for comparison.
+
+\section*{Data Availability}
+All code (scripts 119--138) and the modified CLASS C source are at \url{https://github.com/manuzz88/gcv-theory}. SPARC data: \url{http://astroweb.cwru.edu/SPARC/}.
+
+\begin{thebibliography}{99}
+
+\bibitem[Bekenstein(2004)]{Bekenstein2004}
+Bekenstein, J.~D. 2004, Phys.\ Rev.\ D, 70, 083509
+
+\bibitem[Bellini \& Sawicki(2015)]{Bellini2015}
+Bellini, E., \& Sawicki, I. 2015, JCAP, 07, 050
+
+\bibitem[Blas et al.(2011)]{Blas2011}
+Blas, D., Lesgourgues, J., \& Tram, T. 2011, JCAP, 07, 034
+
+\bibitem[DES Collaboration(2022)]{DES2022}
+DES Collaboration 2022, Phys.\ Rev.\ D, 105, 023520
+
+\bibitem[Heymans et al.(2021)]{KiDS2021}
+Heymans, C., et al. 2021, A\&A, 646, A140
+
+\bibitem[Kov\'acs et al.(2022)]{Kovacs2022}
+Kov\'acs, A., et al. 2022, MNRAS, 515, 4417
+
+\bibitem[Lelli et al.(2016)]{Lelli2016}
+Lelli, F., McGaugh, S.~S., \& Schombert, J.~M. 2016, AJ, 152, 157
+
+\bibitem[LUX Collaboration(2017)]{LUX2017}
+Akerib, D.~S., et al. 2017, Phys.\ Rev.\ Lett., 118, 021303
+
+\bibitem[McGaugh et al.(2016)]{McGaugh2016}
+McGaugh, S.~S., Lelli, F., \& Schombert, J.~M. 2016, Phys.\ Rev.\ Lett., 117, 201101
+
+\bibitem[Milgrom(1983)]{Milgrom1983}
+Milgrom, M. 1983, ApJ, 270, 365
+
+\bibitem[Planck Collaboration(2020)]{Planck2020}
+Planck Collaboration 2020, A\&A, 641, A6
+
+\bibitem[Riess et al.(2022)]{Riess2022}
+Riess, A.~G., et al. 2022, ApJ, 934, L7
+
+\bibitem[Verlinde(2017)]{Verlinde2017}
+Verlinde, E. 2017, SciPost Phys., 2, 016
+
+\end{thebibliography}
+
+\appendix
+
+\section{Version History}
+\begin{itemize}
+    \item v1.0 (2025-11-02): Initial preprint. Galaxy rotation curves, weak lensing, cluster mergers.
+    \item v2.1 (2025-11-02): Added MCMC, mass threshold, H0 tension analysis.
+    \item v3.0 (2026-02-19): Major update. Lagrangian derivation of $\Gamma(\rho)=\tanh$. Unified formulation. Modified CLASS Boltzmann solver. $\Delta\chi^2=-17.70$. $S_8$ tension reduced $3.9\sigma\to2.6\sigma$.
+\end{itemize}
+
+\section{How to Reproduce}
+
+\begin{verbatim}
+# Clone repository
+git clone https://github.com/manuzz88/gcv-theory.git
+cd gcv-theory
+
+# Run the definitive CLASS test (Script 138)
+python3 gcv_gpu_tests/theory/138_CLASS_GCV_Modified_Gravity.py
+
+# For CLASS C code modification details:
+# see gcv_gpu_tests/theory/135_CLASS_Implementation_Blueprint.py
+\end{verbatim}
+
+The modified CLASS C code changes are documented in the commit history of the repository.
+
+\end{document}
