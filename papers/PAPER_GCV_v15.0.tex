@@ -16,7 +16,7 @@ from Quantum Vacuum Organization}
 \small Independent Researcher, Italy\\
 \small \href{mailto:manuel.lazzaro@me.com}{manuel.lazzaro@me.com}\\
 \small Code: \href{https://github.com/manuzz88/gcv-theory}{github.com/manuzz88/gcv-theory}}
-\date{February 2026 --- Version 15.0 (Preprint, not peer reviewed)\\
+\date{February 2026 --- Version 15.1 (Preprint, not peer reviewed)\\
 \small DOI: \href{https://doi.org/10.5281/zenodo.17505641}{10.5281/zenodo.17505641}}
 
 \begin{document}
@@ -31,9 +31,11 @@ We present Vacuum Coherence Gravity v15.0 (GCV), a modified gravity framework in
 
 \textbf{Important caveat}: The $\chi^2$ uses a simplified likelihood, not the full Planck plik analysis. $\mu_0 = 0.15$ is fitted, not derived from first principles. These results are preliminary.
 
-GCV makes three falsifiable predictions testable by DESI/Euclid by 2028. All code is open source.
+\textbf{New in v15.1}: We apply GCV to CDG-2 \citep{Li2025}, a candidate dark galaxy in the Perseus cluster reported to be $99.94\%$ dark matter. GCV predicts the extreme apparent dark matter fraction naturally (deep-MOND regime, $g_N/a_0 \sim 0.006$) and makes a testable prediction for the velocity dispersion: $\sigma \approx 21$ km/s, measurable with follow-up spectroscopy.
 
-\textbf{Keywords}: modified gravity, dark matter alternatives, dark energy, quantum vacuum, galaxy rotation curves, CMB, S8 tension, CLASS Boltzmann solver
+GCV makes four falsifiable predictions testable by DESI/Euclid by 2028. All code is open source.
+
+\textbf{Keywords}: modified gravity, dark matter alternatives, dark energy, quantum vacuum, galaxy rotation curves, CMB, S8 tension, CLASS Boltzmann solver, dark galaxies
 \end{abstract}
 
 \tableofcontents
@@ -174,6 +176,66 @@ By the likelihood ratio test with 1 additional parameter: $\Delta\chi^2 < -10$ c
     \item Gravitational wave speed: tensor modes unaffected; consistent with GW170817 ($|c_\mathrm{gw}-c|/c < 10^{-15}$)
 \end{itemize}
 
+\section{Extreme Test Case: CDG-2 Dark Galaxy}
+\label{sec:cdg2}
+
+CDG-2 (Candidate Dark Galaxy-2) is a recently discovered galaxy in the Perseus cluster \citep{Li2025}, consisting of four globular clusters (GCs) embedded in extremely faint diffuse emission. It represents one of the most dark-matter-dominated galaxies ever found and provides a stringent test for GCV.
+
+\subsection{Observed Properties}
+
+From \citet{Li2025} (arXiv:2506.15644):
+\begin{itemize}
+    \item Distance: 75 Mpc (Perseus cluster)
+    \item Total luminosity: $L_{V,\mathrm{gal}} = 6.2 \pm 3.0 \times 10^6\,L_\odot$
+    \item Stellar mass: $M_* \approx 1.2 \times 10^7\,M_\odot$ ($M/L_V \sim 2$)
+    \item GC span diameter: $\sim 1.2$ kpc (4 GCs)
+    \item Mean surface brightness: $\langle\mu\rangle_V \sim 27.5$ mag arcsec$^{-2}$
+    \item DM halo mass (GC-to-halo relation): $2$--$5.7 \times 10^{10}\,M_\odot$
+    \item Inferred DM fraction: 99.94\%--99.98\%
+\end{itemize}
+
+\textbf{Critical note}: The dark matter fraction is \textit{not} measured dynamically. It is inferred from the empirical GC-to-halo mass relation \citep{Harris2017,Burkert2020}. No velocity dispersion has been measured yet.
+
+\subsection{GCV Analysis}
+
+At the effective radius ($R_\mathrm{eff} \sim 1.5$ kpc), the Newtonian acceleration from baryonic mass alone is:
+\begin{equation}
+    \frac{g_N}{a_0} = \frac{G M_*}{a_0 R_\mathrm{eff}^2} \approx 0.006
+\end{equation}
+This places CDG-2 deep in the MOND/GCV regime ($g_N \ll a_0$), where vacuum susceptibility provides an enhancement factor of $\sim 13\times$.
+
+The apparent dynamical mass at $R_\mathrm{eff}$ is:
+\begin{equation}
+    M_\mathrm{dyn}^\mathrm{GCV}(R_\mathrm{eff}) \approx 1.6 \times 10^8\,M_\odot
+\end{equation}
+corresponding to an apparent dark matter fraction of $\sim 92\%$ at 1.5 kpc, rising to $> 96\%$ at 3 kpc and increasing further at larger radii.
+
+\subsection{Testable Prediction}
+
+In the deep-MOND regime, the velocity dispersion of a pressure-supported system depends only on baryonic mass and $a_0$:
+\begin{equation}
+    \sigma_\mathrm{GCV} \sim (G\,M_*\,a_0)^{1/4} \approx 21\,\mathrm{km/s}
+    \label{eq:sigma_cdg2}
+\end{equation}
+For comparison, the Newtonian prediction (no dark matter) gives $\sigma_\mathrm{Newton} \approx 6$ km/s at $R_\mathrm{eff}$.
+
+\begin{table}[h]
+\centering
+\caption{GCV prediction for CDG-2 velocity dispersion}
+\begin{tabular}{lcc}
+\toprule
+Baryonic mass assumption & $\sigma_\mathrm{GCV}$ (km/s) & Note \\
+\midrule
+$M_b = 6 \times 10^6\,M_\odot$ (low) & 17.6 & Lower $L_V$ bound \\
+$M_b = 1.2 \times 10^7\,M_\odot$ (best) & \textbf{20.9} & Best estimate \\
+$M_b = 1.8 \times 10^7\,M_\odot$ (high) & 23.1 & Upper $L_V$ bound \\
+$M_b = 2.4 \times 10^7\,M_\odot$ (+gas) & 24.9 & With 50\% gas \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This prediction is made \textit{before} any spectroscopic measurement of CDG-2, with no free parameters beyond $a_0 = 1.2 \times 10^{-10}$ m/s$^2$. If follow-up spectroscopy measures $\sigma \approx 17$--$25$ km/s, it would strongly support GCV.
+
 \section{Falsifiable Predictions}
 \label{sec:predictions}
 
@@ -181,6 +243,7 @@ By the likelihood ratio test with 1 additional parameter: $\Delta\chi^2 < -10$ c
     \item \textbf{Void expansion}: 5--15\% faster than $\Lambda$CDM. Testable with DESI/Euclid by 2028.
     \item \textbf{ISW enhancement}: Factor $\sim1.5$ from supervoids. Testable with improved CMB maps and void catalogs.
     \item \textbf{$w(z)$ shape}: Follows $w(z) = -1 + \epsilon\,\sigma^2(z)\,f_\mathrm{void}(z)$, not linear CPL. Testable with DESI Year-3.
+    \item \textbf{CDG-2 velocity dispersion}: $\sigma \approx 21$ km/s (Eq.~\ref{eq:sigma_cdg2}). Testable with spectroscopy of the GC system.
 \end{enumerate}
 
 \section{Discussion}
@@ -196,6 +259,7 @@ By the likelihood ratio test with 1 additional parameter: $\Delta\chi^2 < -10$ c
 Test & $\Lambda$CDM & GCV & Status \\
 \midrule
 SPARC rotation curves (175) & Requires DM halo & 0.06\% deviation & Competitive \\
+CDG-2 dark galaxy & Requires DM halo & Deep MOND, $\sigma{\approx}21$ km/s & Prediction \\
 CMB acoustic peaks & Excellent & $<0.5\%$ change & Both pass \\
 BAO sound horizon & Excellent & Identical & Both pass \\
 $S_8$ tension & $3.9\sigma$ & $2.6\sigma$ & GCV better \\
@@ -229,7 +293,7 @@ We present GCV v15.0, a modified gravity framework with the following key result
 \begin{enumerate}
     \item \textbf{Galactic scale}: 175 SPARC galaxies reproduced with 0.06\% mean deviation, no free parameters per galaxy.
     \item \textbf{Cosmological scale}: Modified CLASS yields $\Delta\chi^2 = -17.70$ (preliminary), $S_8$ tension reduced from $3.9\sigma$ to $2.6\sigma$, CMB and BAO preserved.
-    \item \textbf{Falsifiable}: Three predictions testable by 2028.
+    \item \textbf{Falsifiable}: Four predictions testable by 2028, including $\sigma \approx 21$ km/s for CDG-2.
 \end{enumerate}
 
 GCV is not yet a proven replacement for $\Lambda$CDM. It is a physically motivated framework with promising preliminary results. The most urgent next steps are: full MCMC with official Planck likelihood; derivation of $\mu_0$ from the Lagrangian; non-linear power spectrum; independent verification.
@@ -240,7 +304,7 @@ All code is open source at \url{https://github.com/manuzz88/gcv-theory}.
 We thank the SPARC collaboration for publicly available data. This work used CLASS \citep{Blas2011}, Python, NumPy, SciPy, and Matplotlib. We acknowledge AI assistance (Windsurf/Cascade) in code development. Planck 2018 data products \citep{Planck2020} were used for comparison.
 
 \section*{Data Availability}
-All code (scripts 119--138) and the modified CLASS C source are at \url{https://github.com/manuzz88/gcv-theory}. SPARC data: \url{http://astroweb.cwru.edu/SPARC/}.
+All code (scripts 119--139) and the modified CLASS C source are at \url{https://github.com/manuzz88/gcv-theory}. SPARC data: \url{http://astroweb.cwru.edu/SPARC/}.
 
 \begin{thebibliography}{99}
 
@@ -283,6 +347,15 @@ Riess, A.~G., et al. 2022, ApJ, 934, L7
 \bibitem[Verlinde(2017)]{Verlinde2017}
 Verlinde, E. 2017, SciPost Phys., 2, 016
 
+\bibitem[Li et al.(2025)]{Li2025}
+Li, D., et al. 2025, ApJ Lett., arXiv:2506.15644
+
+\bibitem[Harris et al.(2017)]{Harris2017}
+Harris, W.~E., Harris, G.~L., \& Hudson, M.~J. 2017, ApJ, 836, 67
+
+\bibitem[Burkert \& Forbes(2020)]{Burkert2020}
+Burkert, A., \& Forbes, D.~A. 2020, AJ, 159, 56
+
 \end{thebibliography}
 
 \appendix
@@ -292,6 +365,7 @@ Verlinde, E. 2017, SciPost Phys., 2, 016
     \item v1.0 (2025-11-02): Initial preprint. Galaxy rotation curves, weak lensing, cluster mergers.
     \item v2.1 (2025-11-02): Added MCMC, mass threshold, H0 tension analysis.
     \item v15.0 (2026-02-19): Major update. Lagrangian derivation of $\Gamma(\rho)=\tanh$. Unified formulation. Modified CLASS Boltzmann solver. $\Delta\chi^2=-17.70$. $S_8$ tension reduced $3.9\sigma\to2.6\sigma$.
+    \item v15.1 (2026-02-21): Added CDG-2 dark galaxy test case (Section~\ref{sec:cdg2}). Testable prediction: $\sigma \approx 21$ km/s.
 \end{itemize}
 
 \section{How to Reproduce}
@@ -303,6 +377,9 @@ cd gcv-theory
 
 # Run the definitive CLASS test (Script 138)
 python3 gcv_gpu_tests/theory/138_CLASS_GCV_Modified_Gravity.py
+
+# Run the CDG-2 dark galaxy test (Script 139)
+python3 gcv_gpu_tests/theory/139_CDG2_Dark_Galaxy_GCV_Test.py
 
 # For CLASS C code modification details:
 # see gcv_gpu_tests/theory/135_CLASS_Implementation_Blueprint.py
